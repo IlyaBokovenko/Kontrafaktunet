@@ -1,6 +1,0 @@
-[submodule "json"]
-	path = json
-	url = /Users/loki/Projects/Frameworks/TouchJSON
-[submodule "ecma-utils"]
-	path = ecma-utils
-	url = /Users/loki/Projects/Ecma/ecma-utils
