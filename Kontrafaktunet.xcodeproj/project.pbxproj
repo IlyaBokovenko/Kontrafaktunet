@@ -31,6 +31,17 @@
 		E69FC42314326CBB001E8185 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC42214326CBB001E8185 /* NSData+Base64.m */; };
 		E69FC42614326CCA001E8185 /* UIAlertView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC42514326CCA001E8185 /* UIAlertView+Utils.m */; };
 		E69FC42914326D35001E8185 /* FileUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC42814326D35001E8185 /* FileUpload.m */; };
+		E69FC44314326F3D001E8185 /* AsyncCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC43314326F3D001E8185 /* AsyncCallback.m */; };
+		E69FC44414326F3D001E8185 /* AsyncObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC43714326F3D001E8185 /* AsyncObject.m */; };
+		E69FC44514326F3D001E8185 /* BlockingAsyncCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC43914326F3D001E8185 /* BlockingAsyncCallback.m */; };
+		E69FC44614326F3D001E8185 /* Callback.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC43B14326F3D001E8185 /* Callback.m */; };
+		E69FC44714326F3D001E8185 /* CompositeBlockingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC43D14326F3D001E8185 /* CompositeBlockingView.m */; };
+		E69FC44814326F3D001E8185 /* UIBlocker.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC43F14326F3D001E8185 /* UIBlocker.m */; };
+		E69FC44914326F3D001E8185 /* UIBlockingAsyncObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC44114326F3D001E8185 /* UIBlockingAsyncObject.m */; };
+		E69FC44C14327089001E8185 /* NSInvocation+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC44B14327089001E8185 /* NSInvocation+Utils.m */; };
+		E69FC44F14327099001E8185 /* NSError+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC44E14327099001E8185 /* NSError+Utils.m */; };
+		E69FC452143270A6001E8185 /* NSObject+Invocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC451143270A6001E8185 /* NSObject+Invocation.m */; };
+		E69FC4551432742B001E8185 /* CGGeometry+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC4541432742B001E8185 /* CGGeometry+Utils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +82,32 @@
 		E69FC42514326CCA001E8185 /* UIAlertView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+Utils.m"; path = "ecma-utils/Classes/UIAlertView+Utils.m"; sourceTree = "<group>"; };
 		E69FC42714326D35001E8185 /* FileUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUpload.h; sourceTree = "<group>"; };
 		E69FC42814326D35001E8185 /* FileUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUpload.m; sourceTree = "<group>"; };
+		E69FC43114326F3D001E8185 /* Async.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Async.h; sourceTree = "<group>"; };
+		E69FC43214326F3D001E8185 /* AsyncCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncCallback.h; sourceTree = "<group>"; };
+		E69FC43314326F3D001E8185 /* AsyncCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncCallback.m; sourceTree = "<group>"; };
+		E69FC43414326F3D001E8185 /* AsyncCallbackProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncCallbackProtocol.h; sourceTree = "<group>"; };
+		E69FC43514326F3D001E8185 /* AsyncInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncInvocation.h; sourceTree = "<group>"; };
+		E69FC43614326F3D001E8185 /* AsyncObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncObject.h; sourceTree = "<group>"; };
+		E69FC43714326F3D001E8185 /* AsyncObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncObject.m; sourceTree = "<group>"; };
+		E69FC43814326F3D001E8185 /* BlockingAsyncCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockingAsyncCallback.h; sourceTree = "<group>"; };
+		E69FC43914326F3D001E8185 /* BlockingAsyncCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockingAsyncCallback.m; sourceTree = "<group>"; };
+		E69FC43A14326F3D001E8185 /* Callback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Callback.h; sourceTree = "<group>"; };
+		E69FC43B14326F3D001E8185 /* Callback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Callback.m; sourceTree = "<group>"; };
+		E69FC43C14326F3D001E8185 /* CompositeBlockingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompositeBlockingView.h; sourceTree = "<group>"; };
+		E69FC43D14326F3D001E8185 /* CompositeBlockingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompositeBlockingView.m; sourceTree = "<group>"; };
+		E69FC43E14326F3D001E8185 /* UIBlocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBlocker.h; sourceTree = "<group>"; };
+		E69FC43F14326F3D001E8185 /* UIBlocker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBlocker.m; sourceTree = "<group>"; };
+		E69FC44014326F3D001E8185 /* UIBlockingAsyncObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBlockingAsyncObject.h; sourceTree = "<group>"; };
+		E69FC44114326F3D001E8185 /* UIBlockingAsyncObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBlockingAsyncObject.m; sourceTree = "<group>"; };
+		E69FC44214326F3D001E8185 /* UIBlockingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBlockingView.h; sourceTree = "<group>"; };
+		E69FC44A14327089001E8185 /* NSInvocation+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+Utils.h"; path = "ecma-utils/Classes/NSInvocation+Utils.h"; sourceTree = "<group>"; };
+		E69FC44B14327089001E8185 /* NSInvocation+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+Utils.m"; path = "ecma-utils/Classes/NSInvocation+Utils.m"; sourceTree = "<group>"; };
+		E69FC44D14327099001E8185 /* NSError+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSError+Utils.h"; path = "ecma-utils/Classes/NSError+Utils.h"; sourceTree = "<group>"; };
+		E69FC44E14327099001E8185 /* NSError+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSError+Utils.m"; path = "ecma-utils/Classes/NSError+Utils.m"; sourceTree = "<group>"; };
+		E69FC450143270A6001E8185 /* NSObject+Invocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Invocation.h"; path = "ecma-utils/Classes/NSObject+Invocation.h"; sourceTree = "<group>"; };
+		E69FC451143270A6001E8185 /* NSObject+Invocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Invocation.m"; path = "ecma-utils/Classes/NSObject+Invocation.m"; sourceTree = "<group>"; };
+		E69FC4531432742B001E8185 /* CGGeometry+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CGGeometry+Utils.h"; path = "ecma-utils/Classes/CGGeometry+Utils.h"; sourceTree = "<group>"; };
+		E69FC4541432742B001E8185 /* CGGeometry+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CGGeometry+Utils.m"; path = "ecma-utils/Classes/CGGeometry+Utils.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +195,15 @@
 		E69FC40614326B28001E8185 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E69FC4531432742B001E8185 /* CGGeometry+Utils.h */,
+				E69FC4541432742B001E8185 /* CGGeometry+Utils.m */,
+				E69FC450143270A6001E8185 /* NSObject+Invocation.h */,
+				E69FC451143270A6001E8185 /* NSObject+Invocation.m */,
+				E69FC44D14327099001E8185 /* NSError+Utils.h */,
+				E69FC44E14327099001E8185 /* NSError+Utils.m */,
+				E69FC44A14327089001E8185 /* NSInvocation+Utils.h */,
+				E69FC44B14327089001E8185 /* NSInvocation+Utils.m */,
+				E69FC43014326F3D001E8185 /* Async */,
 				E69FC42414326CCA001E8185 /* UIAlertView+Utils.h */,
 				E69FC42514326CCA001E8185 /* UIAlertView+Utils.m */,
 				E69FC42114326CBB001E8185 /* NSData+Base64.h */,
@@ -185,6 +231,32 @@
 			);
 			name = Web;
 			path = "ecma-utils/Classes/Web";
+			sourceTree = "<group>";
+		};
+		E69FC43014326F3D001E8185 /* Async */ = {
+			isa = PBXGroup;
+			children = (
+				E69FC43114326F3D001E8185 /* Async.h */,
+				E69FC43214326F3D001E8185 /* AsyncCallback.h */,
+				E69FC43314326F3D001E8185 /* AsyncCallback.m */,
+				E69FC43414326F3D001E8185 /* AsyncCallbackProtocol.h */,
+				E69FC43514326F3D001E8185 /* AsyncInvocation.h */,
+				E69FC43614326F3D001E8185 /* AsyncObject.h */,
+				E69FC43714326F3D001E8185 /* AsyncObject.m */,
+				E69FC43814326F3D001E8185 /* BlockingAsyncCallback.h */,
+				E69FC43914326F3D001E8185 /* BlockingAsyncCallback.m */,
+				E69FC43A14326F3D001E8185 /* Callback.h */,
+				E69FC43B14326F3D001E8185 /* Callback.m */,
+				E69FC43C14326F3D001E8185 /* CompositeBlockingView.h */,
+				E69FC43D14326F3D001E8185 /* CompositeBlockingView.m */,
+				E69FC43E14326F3D001E8185 /* UIBlocker.h */,
+				E69FC43F14326F3D001E8185 /* UIBlocker.m */,
+				E69FC44014326F3D001E8185 /* UIBlockingAsyncObject.h */,
+				E69FC44114326F3D001E8185 /* UIBlockingAsyncObject.m */,
+				E69FC44214326F3D001E8185 /* UIBlockingView.h */,
+			);
+			name = Async;
+			path = "ecma-utils/Classes/Async";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +337,17 @@
 				E69FC42314326CBB001E8185 /* NSData+Base64.m in Sources */,
 				E69FC42614326CCA001E8185 /* UIAlertView+Utils.m in Sources */,
 				E69FC42914326D35001E8185 /* FileUpload.m in Sources */,
+				E69FC44314326F3D001E8185 /* AsyncCallback.m in Sources */,
+				E69FC44414326F3D001E8185 /* AsyncObject.m in Sources */,
+				E69FC44514326F3D001E8185 /* BlockingAsyncCallback.m in Sources */,
+				E69FC44614326F3D001E8185 /* Callback.m in Sources */,
+				E69FC44714326F3D001E8185 /* CompositeBlockingView.m in Sources */,
+				E69FC44814326F3D001E8185 /* UIBlocker.m in Sources */,
+				E69FC44914326F3D001E8185 /* UIBlockingAsyncObject.m in Sources */,
+				E69FC44C14327089001E8185 /* NSInvocation+Utils.m in Sources */,
+				E69FC44F14327099001E8185 /* NSError+Utils.m in Sources */,
+				E69FC452143270A6001E8185 /* NSObject+Invocation.m in Sources */,
+				E69FC4551432742B001E8185 /* CGGeometry+Utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
