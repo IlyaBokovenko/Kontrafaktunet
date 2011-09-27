@@ -42,6 +42,14 @@
 		E69FC44F14327099001E8185 /* NSError+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC44E14327099001E8185 /* NSError+Utils.m */; };
 		E69FC452143270A6001E8185 /* NSObject+Invocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC451143270A6001E8185 /* NSObject+Invocation.m */; };
 		E69FC4551432742B001E8185 /* CGGeometry+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC4541432742B001E8185 /* CGGeometry+Utils.m */; };
+		E69FC48114327D6F001E8185 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC47B14327D6F001E8185 /* CJSONDeserializer.m */; };
+		E69FC48214327D6F001E8185 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC47D14327D6F001E8185 /* CJSONScanner.m */; };
+		E69FC48314327D6F001E8185 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC47F14327D6F001E8185 /* CJSONSerializer.m */; };
+		E69FC48614327E01001E8185 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC48514327E01001E8185 /* CDataScanner.m */; };
+		E69FC48B14327E14001E8185 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC48814327E14001E8185 /* CDataScanner_Extensions.m */; };
+		E69FC48C14327E14001E8185 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC48A14327E14001E8185 /* NSDictionary_JSONExtensions.m */; };
+		E69FC48F143281B7001E8185 /* fake-button.png in Resources */ = {isa = PBXBuildFile; fileRef = E69FC48D143281B7001E8185 /* fake-button.png */; };
+		E69FC490143281B7001E8185 /* fake.png in Resources */ = {isa = PBXBuildFile; fileRef = E69FC48E143281B7001E8185 /* fake.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +116,21 @@
 		E69FC451143270A6001E8185 /* NSObject+Invocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Invocation.m"; path = "ecma-utils/Classes/NSObject+Invocation.m"; sourceTree = "<group>"; };
 		E69FC4531432742B001E8185 /* CGGeometry+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CGGeometry+Utils.h"; path = "ecma-utils/Classes/CGGeometry+Utils.h"; sourceTree = "<group>"; };
 		E69FC4541432742B001E8185 /* CGGeometry+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CGGeometry+Utils.m"; path = "ecma-utils/Classes/CGGeometry+Utils.m"; sourceTree = "<group>"; };
+		E69FC47A14327D6F001E8185 /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJSONDeserializer.h; path = json/Source/JSON/CJSONDeserializer.h; sourceTree = "<group>"; };
+		E69FC47B14327D6F001E8185 /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJSONDeserializer.m; path = json/Source/JSON/CJSONDeserializer.m; sourceTree = "<group>"; };
+		E69FC47C14327D6F001E8185 /* CJSONScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJSONScanner.h; path = json/Source/JSON/CJSONScanner.h; sourceTree = "<group>"; };
+		E69FC47D14327D6F001E8185 /* CJSONScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJSONScanner.m; path = json/Source/JSON/CJSONScanner.m; sourceTree = "<group>"; };
+		E69FC47E14327D6F001E8185 /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJSONSerializer.h; path = json/Source/JSON/CJSONSerializer.h; sourceTree = "<group>"; };
+		E69FC47F14327D6F001E8185 /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJSONSerializer.m; path = json/Source/JSON/CJSONSerializer.m; sourceTree = "<group>"; };
+		E69FC48014327D6F001E8185 /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONRepresentation.h; path = json/Source/JSON/JSONRepresentation.h; sourceTree = "<group>"; };
+		E69FC48414327E01001E8185 /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDataScanner.h; path = json/Source/CDataScanner.h; sourceTree = "<group>"; };
+		E69FC48514327E01001E8185 /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDataScanner.m; path = json/Source/CDataScanner.m; sourceTree = "<group>"; };
+		E69FC48714327E14001E8185 /* CDataScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDataScanner_Extensions.h; path = json/Source/Extensions/CDataScanner_Extensions.h; sourceTree = "<group>"; };
+		E69FC48814327E14001E8185 /* CDataScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDataScanner_Extensions.m; path = json/Source/Extensions/CDataScanner_Extensions.m; sourceTree = "<group>"; };
+		E69FC48914327E14001E8185 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDictionary_JSONExtensions.h; path = json/Source/Extensions/NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
+		E69FC48A14327E14001E8185 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDictionary_JSONExtensions.m; path = json/Source/Extensions/NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
+		E69FC48D143281B7001E8185 /* fake-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fake-button.png"; sourceTree = "<group>"; };
+		E69FC48E143281B7001E8185 /* fake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fake.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +204,8 @@
 		E69FC3F514325D11001E8185 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E69FC48D143281B7001E8185 /* fake-button.png */,
+				E69FC48E143281B7001E8185 /* fake.png */,
 				E69FC40414326783001E8185 /* checking-button.png */,
 				E69FC40214326362001E8185 /* logo-and-description.png */,
 				E69FC3FA1432630C001E8185 /* check-button.png */,
@@ -195,22 +220,8 @@
 		E69FC40614326B28001E8185 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				E69FC4531432742B001E8185 /* CGGeometry+Utils.h */,
-				E69FC4541432742B001E8185 /* CGGeometry+Utils.m */,
-				E69FC450143270A6001E8185 /* NSObject+Invocation.h */,
-				E69FC451143270A6001E8185 /* NSObject+Invocation.m */,
-				E69FC44D14327099001E8185 /* NSError+Utils.h */,
-				E69FC44E14327099001E8185 /* NSError+Utils.m */,
-				E69FC44A14327089001E8185 /* NSInvocation+Utils.h */,
-				E69FC44B14327089001E8185 /* NSInvocation+Utils.m */,
-				E69FC43014326F3D001E8185 /* Async */,
-				E69FC42414326CCA001E8185 /* UIAlertView+Utils.h */,
-				E69FC42514326CCA001E8185 /* UIAlertView+Utils.m */,
-				E69FC42114326CBB001E8185 /* NSData+Base64.h */,
-				E69FC42214326CBB001E8185 /* NSData+Base64.m */,
-				E69FC41E14326CB0001E8185 /* NSObject+Utils.h */,
-				E69FC41F14326CB0001E8185 /* NSObject+Utils.m */,
-				E69FC40814326B6E001E8185 /* Web */,
+				E69FC47914327D5A001E8185 /* json */,
+				E69FC47814327D2F001E8185 /* utils */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -257,6 +268,49 @@
 			);
 			name = Async;
 			path = "ecma-utils/Classes/Async";
+			sourceTree = "<group>";
+		};
+		E69FC47814327D2F001E8185 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				E69FC4531432742B001E8185 /* CGGeometry+Utils.h */,
+				E69FC4541432742B001E8185 /* CGGeometry+Utils.m */,
+				E69FC450143270A6001E8185 /* NSObject+Invocation.h */,
+				E69FC451143270A6001E8185 /* NSObject+Invocation.m */,
+				E69FC44D14327099001E8185 /* NSError+Utils.h */,
+				E69FC44E14327099001E8185 /* NSError+Utils.m */,
+				E69FC44A14327089001E8185 /* NSInvocation+Utils.h */,
+				E69FC44B14327089001E8185 /* NSInvocation+Utils.m */,
+				E69FC43014326F3D001E8185 /* Async */,
+				E69FC42414326CCA001E8185 /* UIAlertView+Utils.h */,
+				E69FC42514326CCA001E8185 /* UIAlertView+Utils.m */,
+				E69FC42114326CBB001E8185 /* NSData+Base64.h */,
+				E69FC42214326CBB001E8185 /* NSData+Base64.m */,
+				E69FC41E14326CB0001E8185 /* NSObject+Utils.h */,
+				E69FC41F14326CB0001E8185 /* NSObject+Utils.m */,
+				E69FC40814326B6E001E8185 /* Web */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		E69FC47914327D5A001E8185 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				E69FC48714327E14001E8185 /* CDataScanner_Extensions.h */,
+				E69FC48814327E14001E8185 /* CDataScanner_Extensions.m */,
+				E69FC48914327E14001E8185 /* NSDictionary_JSONExtensions.h */,
+				E69FC48A14327E14001E8185 /* NSDictionary_JSONExtensions.m */,
+				E69FC48414327E01001E8185 /* CDataScanner.h */,
+				E69FC48514327E01001E8185 /* CDataScanner.m */,
+				E69FC47A14327D6F001E8185 /* CJSONDeserializer.h */,
+				E69FC47B14327D6F001E8185 /* CJSONDeserializer.m */,
+				E69FC47C14327D6F001E8185 /* CJSONScanner.h */,
+				E69FC47D14327D6F001E8185 /* CJSONScanner.m */,
+				E69FC47E14327D6F001E8185 /* CJSONSerializer.h */,
+				E69FC47F14327D6F001E8185 /* CJSONSerializer.m */,
+				E69FC48014327D6F001E8185 /* JSONRepresentation.h */,
+			);
+			name = json;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +370,8 @@
 				E69FC4011432630C001E8185 /* question.png in Resources */,
 				E69FC40314326362001E8185 /* logo-and-description.png in Resources */,
 				E69FC40514326783001E8185 /* checking-button.png in Resources */,
+				E69FC48F143281B7001E8185 /* fake-button.png in Resources */,
+				E69FC490143281B7001E8185 /* fake.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +404,12 @@
 				E69FC44F14327099001E8185 /* NSError+Utils.m in Sources */,
 				E69FC452143270A6001E8185 /* NSObject+Invocation.m in Sources */,
 				E69FC4551432742B001E8185 /* CGGeometry+Utils.m in Sources */,
+				E69FC48114327D6F001E8185 /* CJSONDeserializer.m in Sources */,
+				E69FC48214327D6F001E8185 /* CJSONScanner.m in Sources */,
+				E69FC48314327D6F001E8185 /* CJSONSerializer.m in Sources */,
+				E69FC48614327E01001E8185 /* CDataScanner.m in Sources */,
+				E69FC48B14327E14001E8185 /* CDataScanner_Extensions.m in Sources */,
+				E69FC48C14327E14001E8185 /* NSDictionary_JSONExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
