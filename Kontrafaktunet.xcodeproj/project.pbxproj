@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E69FC3D614325CF8001E8185 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69FC3D514325CF8001E8185 /* UIKit.framework */; };
+		E69FC3D814325CF8001E8185 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69FC3D714325CF8001E8185 /* Foundation.framework */; };
+		E69FC3DA14325CF8001E8185 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69FC3D914325CF8001E8185 /* CoreGraphics.framework */; };
+		E69FC3E014325CF8001E8185 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E69FC3DE14325CF8001E8185 /* InfoPlist.strings */; };
+		E69FC3E314325CF8001E8185 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC3E214325CF8001E8185 /* main.m */; };
+		E69FC3E614325CF8001E8185 /* KontrafaktunetAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC3E514325CF8001E8185 /* KontrafaktunetAppDelegate.m */; };
+		E69FC3E914325CF8001E8185 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69FC3E714325CF8001E8185 /* MainWindow.xib */; };
+		E69FC3EC14325CF8001E8185 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC3EB14325CF8001E8185 /* RootViewController.m */; };
+		E69FC3EF14325CF8001E8185 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69FC3ED14325CF8001E8185 /* RootViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E69FC3D114325CF8001E8185 /* Kontrafaktunet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kontrafaktunet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E69FC3D514325CF8001E8185 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E69FC3D714325CF8001E8185 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E69FC3D914325CF8001E8185 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E69FC3DD14325CF8001E8185 /* Kontrafaktunet-Info.plist */ = {isa = PBXFileReference; path = "Kontrafaktunet-Info.plist"; sourceTree = "<group>"; };
+		E69FC3DF14325CF8001E8185 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E69FC3E114325CF8001E8185 /* Kontrafaktunet-Prefix.pch */ = {isa = PBXFileReference; path = "Kontrafaktunet-Prefix.pch"; sourceTree = "<group>"; };
+		E69FC3E214325CF8001E8185 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E69FC3E414325CF8001E8185 /* KontrafaktunetAppDelegate.h */ = {isa = PBXFileReference; path = KontrafaktunetAppDelegate.h; sourceTree = "<group>"; };
+		E69FC3E514325CF8001E8185 /* KontrafaktunetAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KontrafaktunetAppDelegate.m; sourceTree = "<group>"; };
+		E69FC3E814325CF8001E8185 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		E69FC3EA14325CF8001E8185 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		E69FC3EB14325CF8001E8185 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		E69FC3EE14325CF8001E8185 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E69FC3CE14325CF8001E8185 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E69FC3D614325CF8001E8185 /* UIKit.framework in Frameworks */,
+				E69FC3D814325CF8001E8185 /* Foundation.framework in Frameworks */,
+				E69FC3DA14325CF8001E8185 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E69FC3C614325CF8001E8185 = {
+			isa = PBXGroup;
+			children = (
+				E69FC3DB14325CF8001E8185 /* Kontrafaktunet */,
+				E69FC3D414325CF8001E8185 /* Frameworks */,
+				E69FC3D214325CF8001E8185 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E69FC3D214325CF8001E8185 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E69FC3D114325CF8001E8185 /* Kontrafaktunet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E69FC3D414325CF8001E8185 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E69FC3D514325CF8001E8185 /* UIKit.framework */,
+				E69FC3D714325CF8001E8185 /* Foundation.framework */,
+				E69FC3D914325CF8001E8185 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E69FC3DB14325CF8001E8185 /* Kontrafaktunet */ = {
+			isa = PBXGroup;
+			children = (
+				E69FC3E414325CF8001E8185 /* KontrafaktunetAppDelegate.h */,
+				E69FC3E514325CF8001E8185 /* KontrafaktunetAppDelegate.m */,
+				E69FC3E714325CF8001E8185 /* MainWindow.xib */,
+				E69FC3EA14325CF8001E8185 /* RootViewController.h */,
+				E69FC3EB14325CF8001E8185 /* RootViewController.m */,
+				E69FC3ED14325CF8001E8185 /* RootViewController.xib */,
+				E69FC3DC14325CF8001E8185 /* Supporting Files */,
+			);
+			path = Kontrafaktunet;
+			sourceTree = "<group>";
+		};
+		E69FC3DC14325CF8001E8185 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E69FC3DD14325CF8001E8185 /* Kontrafaktunet-Info.plist */,
+				E69FC3DE14325CF8001E8185 /* InfoPlist.strings */,
+				E69FC3E114325CF8001E8185 /* Kontrafaktunet-Prefix.pch */,
+				E69FC3E214325CF8001E8185 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E69FC3D014325CF8001E8185 /* Kontrafaktunet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E69FC3F214325CF8001E8185 /* Build configuration list for PBXNativeTarget "Kontrafaktunet" */;
+			buildPhases = (
+				E69FC3CD14325CF8001E8185 /* Sources */,
+				E69FC3CE14325CF8001E8185 /* Frameworks */,
+				E69FC3CF14325CF8001E8185 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kontrafaktunet;
+			productName = Kontrafaktunet;
+			productReference = E69FC3D114325CF8001E8185 /* Kontrafaktunet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E69FC3C814325CF8001E8185 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = E69FC3CB14325CF8001E8185 /* Build configuration list for PBXProject "Kontrafaktunet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E69FC3C614325CF8001E8185;
+			productRefGroup = E69FC3D214325CF8001E8185 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E69FC3D014325CF8001E8185 /* Kontrafaktunet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E69FC3CF14325CF8001E8185 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E69FC3E014325CF8001E8185 /* InfoPlist.strings in Resources */,
+				E69FC3E914325CF8001E8185 /* MainWindow.xib in Resources */,
+				E69FC3EF14325CF8001E8185 /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E69FC3CD14325CF8001E8185 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E69FC3E314325CF8001E8185 /* main.m in Sources */,
+				E69FC3E614325CF8001E8185 /* KontrafaktunetAppDelegate.m in Sources */,
+				E69FC3EC14325CF8001E8185 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E69FC3DE14325CF8001E8185 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E69FC3DF14325CF8001E8185 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E69FC3E714325CF8001E8185 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E69FC3E814325CF8001E8185 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		E69FC3ED14325CF8001E8185 /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E69FC3EE14325CF8001E8185 /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E69FC3F014325CF8001E8185 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E69FC3F114325CF8001E8185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		E69FC3F314325CF8001E8185 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kontrafaktunet/Kontrafaktunet-Prefix.pch";
+				INFOPLIST_FILE = "Kontrafaktunet/Kontrafaktunet-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E69FC3F414325CF8001E8185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kontrafaktunet/Kontrafaktunet-Prefix.pch";
+				INFOPLIST_FILE = "Kontrafaktunet/Kontrafaktunet-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E69FC3CB14325CF8001E8185 /* Build configuration list for PBXProject "Kontrafaktunet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E69FC3F014325CF8001E8185 /* Debug */,
+				E69FC3F114325CF8001E8185 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E69FC3F214325CF8001E8185 /* Build configuration list for PBXNativeTarget "Kontrafaktunet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E69FC3F314325CF8001E8185 /* Debug */,
+				E69FC3F414325CF8001E8185 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E69FC3C814325CF8001E8185 /* Project object */;
+}
