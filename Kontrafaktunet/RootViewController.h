@@ -1,16 +1,17 @@
-//
-//  RootViewController.h
-//  Kontrafaktunet
-//
-//  Created by loki on 27.09.11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 
-@interface RootViewController : UITableViewController {
-
+@interface RootViewController : UIViewController {
+    IBOutlet UITextField *f1;
+    IBOutlet UITextField *f2;
+    IBOutlet UITextField *f3;
+    IBOutlet UITextField *f4;
+    
+    IBOutlet UIButton *check;
+    
+    IBOutlet UIImageView *statusImage;
 }
+
+-(IBAction)onCheck;
 
 
 @end

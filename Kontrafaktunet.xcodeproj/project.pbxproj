@@ -16,6 +16,21 @@
 		E69FC3E914325CF8001E8185 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69FC3E714325CF8001E8185 /* MainWindow.xib */; };
 		E69FC3EC14325CF8001E8185 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC3EB14325CF8001E8185 /* RootViewController.m */; };
 		E69FC3EF14325CF8001E8185 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69FC3ED14325CF8001E8185 /* RootViewController.xib */; };
+		E69FC3F814325D27001E8185 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E69FC3F614325D27001E8185 /* Default.png */; };
+		E69FC3FE1432630C001E8185 /* check-button.png in Resources */ = {isa = PBXBuildFile; fileRef = E69FC3FA1432630C001E8185 /* check-button.png */; };
+		E69FC3FF1432630C001E8185 /* checked-button.png in Resources */ = {isa = PBXBuildFile; fileRef = E69FC3FB1432630C001E8185 /* checked-button.png */; };
+		E69FC4001432630C001E8185 /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = E69FC3FC1432630C001E8185 /* checkmark.png */; };
+		E69FC4011432630C001E8185 /* question.png in Resources */ = {isa = PBXBuildFile; fileRef = E69FC3FD1432630C001E8185 /* question.png */; };
+		E69FC40314326362001E8185 /* logo-and-description.png in Resources */ = {isa = PBXBuildFile; fileRef = E69FC40214326362001E8185 /* logo-and-description.png */; };
+		E69FC40514326783001E8185 /* checking-button.png in Resources */ = {isa = PBXBuildFile; fileRef = E69FC40414326783001E8185 /* checking-button.png */; };
+		E69FC41414326B6E001E8185 /* NSError+REST.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC40C14326B6E001E8185 /* NSError+REST.m */; };
+		E69FC41514326B6E001E8185 /* NSString+Web.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC40E14326B6E001E8185 /* NSString+Web.m */; };
+		E69FC41614326B6E001E8185 /* RESTService.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC41014326B6E001E8185 /* RESTService.m */; };
+		E69FC41714326B6E001E8185 /* WebParams.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC41214326B6E001E8185 /* WebParams.m */; };
+		E69FC42014326CB0001E8185 /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC41F14326CB0001E8185 /* NSObject+Utils.m */; };
+		E69FC42314326CBB001E8185 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC42214326CBB001E8185 /* NSData+Base64.m */; };
+		E69FC42614326CCA001E8185 /* UIAlertView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC42514326CCA001E8185 /* UIAlertView+Utils.m */; };
+		E69FC42914326D35001E8185 /* FileUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC42814326D35001E8185 /* FileUpload.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +38,39 @@
 		E69FC3D514325CF8001E8185 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E69FC3D714325CF8001E8185 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E69FC3D914325CF8001E8185 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E69FC3DD14325CF8001E8185 /* Kontrafaktunet-Info.plist */ = {isa = PBXFileReference; path = "Kontrafaktunet-Info.plist"; sourceTree = "<group>"; };
+		E69FC3DD14325CF8001E8185 /* Kontrafaktunet-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Kontrafaktunet-Info.plist"; sourceTree = "<group>"; };
 		E69FC3DF14325CF8001E8185 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E69FC3E114325CF8001E8185 /* Kontrafaktunet-Prefix.pch */ = {isa = PBXFileReference; path = "Kontrafaktunet-Prefix.pch"; sourceTree = "<group>"; };
+		E69FC3E114325CF8001E8185 /* Kontrafaktunet-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kontrafaktunet-Prefix.pch"; sourceTree = "<group>"; };
 		E69FC3E214325CF8001E8185 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E69FC3E414325CF8001E8185 /* KontrafaktunetAppDelegate.h */ = {isa = PBXFileReference; path = KontrafaktunetAppDelegate.h; sourceTree = "<group>"; };
+		E69FC3E414325CF8001E8185 /* KontrafaktunetAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KontrafaktunetAppDelegate.h; sourceTree = "<group>"; };
 		E69FC3E514325CF8001E8185 /* KontrafaktunetAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KontrafaktunetAppDelegate.m; sourceTree = "<group>"; };
 		E69FC3E814325CF8001E8185 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		E69FC3EA14325CF8001E8185 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		E69FC3EA14325CF8001E8185 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		E69FC3EB14325CF8001E8185 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		E69FC3EE14325CF8001E8185 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		E69FC3F614325D27001E8185 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E69FC3FA1432630C001E8185 /* check-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-button.png"; sourceTree = "<group>"; };
+		E69FC3FB1432630C001E8185 /* checked-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checked-button.png"; sourceTree = "<group>"; };
+		E69FC3FC1432630C001E8185 /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
+		E69FC3FD1432630C001E8185 /* question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = question.png; sourceTree = "<group>"; };
+		E69FC40214326362001E8185 /* logo-and-description.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-and-description.png"; sourceTree = "<group>"; };
+		E69FC40414326783001E8185 /* checking-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checking-button.png"; sourceTree = "<group>"; };
+		E69FC40B14326B6E001E8185 /* NSError+REST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+REST.h"; sourceTree = "<group>"; };
+		E69FC40C14326B6E001E8185 /* NSError+REST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+REST.m"; sourceTree = "<group>"; };
+		E69FC40D14326B6E001E8185 /* NSString+Web.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Web.h"; sourceTree = "<group>"; };
+		E69FC40E14326B6E001E8185 /* NSString+Web.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Web.m"; sourceTree = "<group>"; };
+		E69FC40F14326B6E001E8185 /* RESTService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTService.h; sourceTree = "<group>"; };
+		E69FC41014326B6E001E8185 /* RESTService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTService.m; sourceTree = "<group>"; };
+		E69FC41114326B6E001E8185 /* WebParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebParams.h; sourceTree = "<group>"; };
+		E69FC41214326B6E001E8185 /* WebParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebParams.m; sourceTree = "<group>"; };
+		E69FC41E14326CB0001E8185 /* NSObject+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Utils.h"; path = "ecma-utils/Classes/NSObject+Utils.h"; sourceTree = "<group>"; };
+		E69FC41F14326CB0001E8185 /* NSObject+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Utils.m"; path = "ecma-utils/Classes/NSObject+Utils.m"; sourceTree = "<group>"; };
+		E69FC42114326CBB001E8185 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "ecma-utils/Classes/NSData+Base64.h"; sourceTree = "<group>"; };
+		E69FC42214326CBB001E8185 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "ecma-utils/Classes/NSData+Base64.m"; sourceTree = "<group>"; };
+		E69FC42414326CCA001E8185 /* UIAlertView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+Utils.h"; path = "ecma-utils/Classes/UIAlertView+Utils.h"; sourceTree = "<group>"; };
+		E69FC42514326CCA001E8185 /* UIAlertView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+Utils.m"; path = "ecma-utils/Classes/UIAlertView+Utils.m"; sourceTree = "<group>"; };
+		E69FC42714326D35001E8185 /* FileUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUpload.h; sourceTree = "<group>"; };
+		E69FC42814326D35001E8185 /* FileUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUpload.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				E69FC3DB14325CF8001E8185 /* Kontrafaktunet */,
+				E69FC3F514325D11001E8185 /* Resources */,
+				E69FC40614326B28001E8185 /* Other Sources */,
 				E69FC3D414325CF8001E8185 /* Frameworks */,
 				E69FC3D214325CF8001E8185 /* Products */,
 			);
@@ -99,6 +139,52 @@
 				E69FC3E214325CF8001E8185 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E69FC3F514325D11001E8185 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E69FC40414326783001E8185 /* checking-button.png */,
+				E69FC40214326362001E8185 /* logo-and-description.png */,
+				E69FC3FA1432630C001E8185 /* check-button.png */,
+				E69FC3FB1432630C001E8185 /* checked-button.png */,
+				E69FC3FC1432630C001E8185 /* checkmark.png */,
+				E69FC3FD1432630C001E8185 /* question.png */,
+				E69FC3F614325D27001E8185 /* Default.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E69FC40614326B28001E8185 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E69FC42414326CCA001E8185 /* UIAlertView+Utils.h */,
+				E69FC42514326CCA001E8185 /* UIAlertView+Utils.m */,
+				E69FC42114326CBB001E8185 /* NSData+Base64.h */,
+				E69FC42214326CBB001E8185 /* NSData+Base64.m */,
+				E69FC41E14326CB0001E8185 /* NSObject+Utils.h */,
+				E69FC41F14326CB0001E8185 /* NSObject+Utils.m */,
+				E69FC40814326B6E001E8185 /* Web */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		E69FC40814326B6E001E8185 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				E69FC42714326D35001E8185 /* FileUpload.h */,
+				E69FC42814326D35001E8185 /* FileUpload.m */,
+				E69FC40B14326B6E001E8185 /* NSError+REST.h */,
+				E69FC40C14326B6E001E8185 /* NSError+REST.m */,
+				E69FC40D14326B6E001E8185 /* NSString+Web.h */,
+				E69FC40E14326B6E001E8185 /* NSString+Web.m */,
+				E69FC40F14326B6E001E8185 /* RESTService.h */,
+				E69FC41014326B6E001E8185 /* RESTService.m */,
+				E69FC41114326B6E001E8185 /* WebParams.h */,
+				E69FC41214326B6E001E8185 /* WebParams.m */,
+			);
+			name = Web;
+			path = "ecma-utils/Classes/Web";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +237,13 @@
 				E69FC3E014325CF8001E8185 /* InfoPlist.strings in Resources */,
 				E69FC3E914325CF8001E8185 /* MainWindow.xib in Resources */,
 				E69FC3EF14325CF8001E8185 /* RootViewController.xib in Resources */,
+				E69FC3F814325D27001E8185 /* Default.png in Resources */,
+				E69FC3FE1432630C001E8185 /* check-button.png in Resources */,
+				E69FC3FF1432630C001E8185 /* checked-button.png in Resources */,
+				E69FC4001432630C001E8185 /* checkmark.png in Resources */,
+				E69FC4011432630C001E8185 /* question.png in Resources */,
+				E69FC40314326362001E8185 /* logo-and-description.png in Resources */,
+				E69FC40514326783001E8185 /* checking-button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +257,14 @@
 				E69FC3E314325CF8001E8185 /* main.m in Sources */,
 				E69FC3E614325CF8001E8185 /* KontrafaktunetAppDelegate.m in Sources */,
 				E69FC3EC14325CF8001E8185 /* RootViewController.m in Sources */,
+				E69FC41414326B6E001E8185 /* NSError+REST.m in Sources */,
+				E69FC41514326B6E001E8185 /* NSString+Web.m in Sources */,
+				E69FC41614326B6E001E8185 /* RESTService.m in Sources */,
+				E69FC41714326B6E001E8185 /* WebParams.m in Sources */,
+				E69FC42014326CB0001E8185 /* NSObject+Utils.m in Sources */,
+				E69FC42314326CBB001E8185 /* NSData+Base64.m in Sources */,
+				E69FC42614326CCA001E8185 /* UIAlertView+Utils.m in Sources */,
+				E69FC42914326D35001E8185 /* FileUpload.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
