@@ -155,6 +155,13 @@ typedef enum{
     [[[AsyncObject asyncObjectForTarget:self] proxyWithCallback:cb] checkCode];
 }
 
+-(IBAction)onInfo{
+    InfoController *ctrl = [[[InfoController alloc] initWithNibName:@"InfoController" bundle:nil] autorelease];
+    ctrl.delegate = self;
+    ctrl.modalTransitionStyle =  UIModalTransitionStyleFlipHorizontal;
+    [self presentModalViewController:ctrl animated:YES];
+}
+
 #pragma mark UITextFieldDelegate
 
 -(IBAction)beginEditing{
@@ -168,6 +175,12 @@ typedef enum{
         [self switchToNextField:textField];
     }
     return YES;
+}
+
+#pragma mark InfoControllerDelegate
+
+-(void)infoControllerDidFinish:(InfoController*)ctrl{
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 @end

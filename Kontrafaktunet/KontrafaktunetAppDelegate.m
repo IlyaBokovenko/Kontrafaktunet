@@ -1,11 +1,3 @@
-//
-//  KontrafaktunetAppDelegate.m
-//  Kontrafaktunet
-//
-//  Created by loki on 27.09.11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
-
 #import "KontrafaktunetAppDelegate.h"
 
 @implementation KontrafaktunetAppDelegate
@@ -13,13 +5,13 @@
 
 @synthesize window=_window;
 
-@synthesize navigationController=_navigationController;
+@synthesize rootController=_rootController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
     // Add the navigation controller's view to the window and display.
-    self.window.rootViewController = self.navigationController;
+    self.window.rootViewController = self.rootController;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -66,7 +58,7 @@
 - (void)dealloc
 {
     [_window release];
-    [_navigationController release];
+    [_rootController release];
     [super dealloc];
 }
 

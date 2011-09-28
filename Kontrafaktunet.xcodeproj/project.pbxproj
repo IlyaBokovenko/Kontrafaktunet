@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E62C30A71433B32E005985B8 /* 2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = E62C30A61433B32E005985B8 /* 2.JPG */; };
+		E62C30AA1433B33C005985B8 /* 8.JPG in Resources */ = {isa = PBXBuildFile; fileRef = E62C30A91433B33C005985B8 /* 8.JPG */; };
+		E62C30AD1433B360005985B8 /* PagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E62C30AC1433B360005985B8 /* PagerController.m */; };
+		E62C30AF1433B51A005985B8 /* 5.JPG in Resources */ = {isa = PBXBuildFile; fileRef = E62C30AE1433B51A005985B8 /* 5.JPG */; };
+		E62C30D31433C01B005985B8 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E62C30D11433C01B005985B8 /* WebViewController.m */; };
+		E62C30D41433C01B005985B8 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E62C30D21433C01B005985B8 /* WebViewController.xib */; };
 		E69FC3D614325CF8001E8185 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69FC3D514325CF8001E8185 /* UIKit.framework */; };
 		E69FC3D814325CF8001E8185 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69FC3D714325CF8001E8185 /* Foundation.framework */; };
 		E69FC3DA14325CF8001E8185 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69FC3D914325CF8001E8185 /* CoreGraphics.framework */; };
@@ -50,9 +56,19 @@
 		E69FC48C14327E14001E8185 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC48A14327E14001E8185 /* NSDictionary_JSONExtensions.m */; };
 		E69FC48F143281B7001E8185 /* fake-button.png in Resources */ = {isa = PBXBuildFile; fileRef = E69FC48D143281B7001E8185 /* fake-button.png */; };
 		E69FC490143281B7001E8185 /* fake.png in Resources */ = {isa = PBXBuildFile; fileRef = E69FC48E143281B7001E8185 /* fake.png */; };
+		E69FC4C714339E9C001E8185 /* InfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC4C514339E8F001E8185 /* InfoController.m */; };
+		E69FC4C814339E9C001E8185 /* InfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69FC4C614339E90001E8185 /* InfoController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E62C30A61433B32E005985B8 /* 2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.JPG; sourceTree = "<group>"; };
+		E62C30A91433B33C005985B8 /* 8.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.JPG; sourceTree = "<group>"; };
+		E62C30AB1433B360005985B8 /* PagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PagerController.h; path = "ecma-utils/Classes/PagerController.h"; sourceTree = "<group>"; };
+		E62C30AC1433B360005985B8 /* PagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PagerController.m; path = "ecma-utils/Classes/PagerController.m"; sourceTree = "<group>"; };
+		E62C30AE1433B51A005985B8 /* 5.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.JPG; sourceTree = "<group>"; };
+		E62C30D01433C01B005985B8 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		E62C30D11433C01B005985B8 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		E62C30D21433C01B005985B8 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		E69FC3D114325CF8001E8185 /* Kontrafaktunet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kontrafaktunet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E69FC3D514325CF8001E8185 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E69FC3D714325CF8001E8185 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -131,6 +147,9 @@
 		E69FC48A14327E14001E8185 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDictionary_JSONExtensions.m; path = json/Source/Extensions/NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
 		E69FC48D143281B7001E8185 /* fake-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fake-button.png"; sourceTree = "<group>"; };
 		E69FC48E143281B7001E8185 /* fake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fake.png; sourceTree = "<group>"; };
+		E69FC4C414339E8F001E8185 /* InfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoController.h; sourceTree = "<group>"; };
+		E69FC4C514339E8F001E8185 /* InfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoController.m; sourceTree = "<group>"; };
+		E69FC4C614339E90001E8185 /* InfoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +204,12 @@
 				E69FC3EA14325CF8001E8185 /* RootViewController.h */,
 				E69FC3EB14325CF8001E8185 /* RootViewController.m */,
 				E69FC3ED14325CF8001E8185 /* RootViewController.xib */,
+				E69FC4C414339E8F001E8185 /* InfoController.h */,
+				E69FC4C514339E8F001E8185 /* InfoController.m */,
+				E69FC4C614339E90001E8185 /* InfoController.xib */,
+				E62C30D01433C01B005985B8 /* WebViewController.h */,
+				E62C30D11433C01B005985B8 /* WebViewController.m */,
+				E62C30D21433C01B005985B8 /* WebViewController.xib */,
 				E69FC3DC14325CF8001E8185 /* Supporting Files */,
 			);
 			path = Kontrafaktunet;
@@ -204,6 +229,9 @@
 		E69FC3F514325D11001E8185 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E62C30AE1433B51A005985B8 /* 5.JPG */,
+				E62C30A91433B33C005985B8 /* 8.JPG */,
+				E62C30A61433B32E005985B8 /* 2.JPG */,
 				E69FC48D143281B7001E8185 /* fake-button.png */,
 				E69FC48E143281B7001E8185 /* fake.png */,
 				E69FC40414326783001E8185 /* checking-button.png */,
@@ -273,6 +301,8 @@
 		E69FC47814327D2F001E8185 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				E62C30AB1433B360005985B8 /* PagerController.h */,
+				E62C30AC1433B360005985B8 /* PagerController.m */,
 				E69FC4531432742B001E8185 /* CGGeometry+Utils.h */,
 				E69FC4541432742B001E8185 /* CGGeometry+Utils.m */,
 				E69FC450143270A6001E8185 /* NSObject+Invocation.h */,
@@ -372,6 +402,11 @@
 				E69FC40514326783001E8185 /* checking-button.png in Resources */,
 				E69FC48F143281B7001E8185 /* fake-button.png in Resources */,
 				E69FC490143281B7001E8185 /* fake.png in Resources */,
+				E69FC4C814339E9C001E8185 /* InfoController.xib in Resources */,
+				E62C30A71433B32E005985B8 /* 2.JPG in Resources */,
+				E62C30AA1433B33C005985B8 /* 8.JPG in Resources */,
+				E62C30AF1433B51A005985B8 /* 5.JPG in Resources */,
+				E62C30D41433C01B005985B8 /* WebViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +445,9 @@
 				E69FC48614327E01001E8185 /* CDataScanner.m in Sources */,
 				E69FC48B14327E14001E8185 /* CDataScanner_Extensions.m in Sources */,
 				E69FC48C14327E14001E8185 /* NSDictionary_JSONExtensions.m in Sources */,
+				E69FC4C714339E9C001E8185 /* InfoController.m in Sources */,
+				E62C30AD1433B360005985B8 /* PagerController.m in Sources */,
+				E62C30D31433C01B005985B8 /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +560,7 @@
 				E69FC3F414325CF8001E8185 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
