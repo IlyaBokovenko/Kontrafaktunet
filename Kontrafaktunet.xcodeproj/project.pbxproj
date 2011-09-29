@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E62C30A71433B32E005985B8 /* 2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = E62C30A61433B32E005985B8 /* 2.JPG */; };
-		E62C30AA1433B33C005985B8 /* 8.JPG in Resources */ = {isa = PBXBuildFile; fileRef = E62C30A91433B33C005985B8 /* 8.JPG */; };
 		E62C30AD1433B360005985B8 /* PagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E62C30AC1433B360005985B8 /* PagerController.m */; };
-		E62C30AF1433B51A005985B8 /* 5.JPG in Resources */ = {isa = PBXBuildFile; fileRef = E62C30AE1433B51A005985B8 /* 5.JPG */; };
 		E62C30D31433C01B005985B8 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E62C30D11433C01B005985B8 /* WebViewController.m */; };
 		E62C30D41433C01B005985B8 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E62C30D21433C01B005985B8 /* WebViewController.xib */; };
+		E6868AFF1434E32400AE008D /* back-button.png in Resources */ = {isa = PBXBuildFile; fileRef = E6868AF71434E32400AE008D /* back-button.png */; };
+		E6868B001434E32400AE008D /* check-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E6868AF81434E32400AE008D /* check-bg.png */; };
+		E6868B011434E32400AE008D /* checked-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E6868AF91434E32400AE008D /* checked-bg.png */; };
+		E6868B021434E32400AE008D /* checkother-button.png in Resources */ = {isa = PBXBuildFile; fileRef = E6868AFA1434E32400AE008D /* checkother-button.png */; };
+		E6868B031434E32400AE008D /* fake-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E6868AFB1434E32400AE008D /* fake-bg.png */; };
+		E6868B041434E32400AE008D /* info-button.png in Resources */ = {isa = PBXBuildFile; fileRef = E6868AFC1434E32400AE008D /* info-button.png */; };
+		E6868B051434E32400AE008D /* infoscreen-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E6868AFD1434E32400AE008D /* infoscreen-bg.png */; };
+		E6868B061434E32400AE008D /* rootscreen-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E6868AFE1434E32400AE008D /* rootscreen-bg.png */; };
+		E6868B091434E8B200AE008D /* KeyboardAvoider.m in Sources */ = {isa = PBXBuildFile; fileRef = E6868B081434E8B200AE008D /* KeyboardAvoider.m */; };
+		E6868B0C1434E92900AE008D /* UIApplication+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E6868B0B1434E92900AE008D /* UIApplication+Utils.m */; };
+		E6868B101434E9A400AE008D /* KontrafactCheckingController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6868B0E1434E9A400AE008D /* KontrafactCheckingController.m */; };
 		E69FC3D614325CF8001E8185 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69FC3D514325CF8001E8185 /* UIKit.framework */; };
 		E69FC3D814325CF8001E8185 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69FC3D714325CF8001E8185 /* Foundation.framework */; };
 		E69FC3DA14325CF8001E8185 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69FC3D914325CF8001E8185 /* CoreGraphics.framework */; };
@@ -24,10 +32,6 @@
 		E69FC3EF14325CF8001E8185 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69FC3ED14325CF8001E8185 /* RootViewController.xib */; };
 		E69FC3F814325D27001E8185 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E69FC3F614325D27001E8185 /* Default.png */; };
 		E69FC3FE1432630C001E8185 /* check-button.png in Resources */ = {isa = PBXBuildFile; fileRef = E69FC3FA1432630C001E8185 /* check-button.png */; };
-		E69FC3FF1432630C001E8185 /* checked-button.png in Resources */ = {isa = PBXBuildFile; fileRef = E69FC3FB1432630C001E8185 /* checked-button.png */; };
-		E69FC4001432630C001E8185 /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = E69FC3FC1432630C001E8185 /* checkmark.png */; };
-		E69FC4011432630C001E8185 /* question.png in Resources */ = {isa = PBXBuildFile; fileRef = E69FC3FD1432630C001E8185 /* question.png */; };
-		E69FC40314326362001E8185 /* logo-and-description.png in Resources */ = {isa = PBXBuildFile; fileRef = E69FC40214326362001E8185 /* logo-and-description.png */; };
 		E69FC40514326783001E8185 /* checking-button.png in Resources */ = {isa = PBXBuildFile; fileRef = E69FC40414326783001E8185 /* checking-button.png */; };
 		E69FC41414326B6E001E8185 /* NSError+REST.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC40C14326B6E001E8185 /* NSError+REST.m */; };
 		E69FC41514326B6E001E8185 /* NSString+Web.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC40E14326B6E001E8185 /* NSString+Web.m */; };
@@ -54,21 +58,30 @@
 		E69FC48614327E01001E8185 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC48514327E01001E8185 /* CDataScanner.m */; };
 		E69FC48B14327E14001E8185 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC48814327E14001E8185 /* CDataScanner_Extensions.m */; };
 		E69FC48C14327E14001E8185 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC48A14327E14001E8185 /* NSDictionary_JSONExtensions.m */; };
-		E69FC48F143281B7001E8185 /* fake-button.png in Resources */ = {isa = PBXBuildFile; fileRef = E69FC48D143281B7001E8185 /* fake-button.png */; };
-		E69FC490143281B7001E8185 /* fake.png in Resources */ = {isa = PBXBuildFile; fileRef = E69FC48E143281B7001E8185 /* fake.png */; };
 		E69FC4C714339E9C001E8185 /* InfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC4C514339E8F001E8185 /* InfoController.m */; };
 		E69FC4C814339E9C001E8185 /* InfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69FC4C614339E90001E8185 /* InfoController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E62C30A61433B32E005985B8 /* 2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.JPG; sourceTree = "<group>"; };
-		E62C30A91433B33C005985B8 /* 8.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.JPG; sourceTree = "<group>"; };
 		E62C30AB1433B360005985B8 /* PagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PagerController.h; path = "ecma-utils/Classes/PagerController.h"; sourceTree = "<group>"; };
 		E62C30AC1433B360005985B8 /* PagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PagerController.m; path = "ecma-utils/Classes/PagerController.m"; sourceTree = "<group>"; };
-		E62C30AE1433B51A005985B8 /* 5.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.JPG; sourceTree = "<group>"; };
 		E62C30D01433C01B005985B8 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		E62C30D11433C01B005985B8 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		E62C30D21433C01B005985B8 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		E6868AF71434E32400AE008D /* back-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-button.png"; sourceTree = "<group>"; };
+		E6868AF81434E32400AE008D /* check-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-bg.png"; sourceTree = "<group>"; };
+		E6868AF91434E32400AE008D /* checked-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checked-bg.png"; sourceTree = "<group>"; };
+		E6868AFA1434E32400AE008D /* checkother-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkother-button.png"; sourceTree = "<group>"; };
+		E6868AFB1434E32400AE008D /* fake-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fake-bg.png"; sourceTree = "<group>"; };
+		E6868AFC1434E32400AE008D /* info-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-button.png"; sourceTree = "<group>"; };
+		E6868AFD1434E32400AE008D /* infoscreen-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "infoscreen-bg.png"; sourceTree = "<group>"; };
+		E6868AFE1434E32400AE008D /* rootscreen-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rootscreen-bg.png"; sourceTree = "<group>"; };
+		E6868B071434E8B200AE008D /* KeyboardAvoider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyboardAvoider.h; path = "ecma-utils/Classes/Forms/KeyboardAvoider.h"; sourceTree = "<group>"; };
+		E6868B081434E8B200AE008D /* KeyboardAvoider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeyboardAvoider.m; path = "ecma-utils/Classes/Forms/KeyboardAvoider.m"; sourceTree = "<group>"; };
+		E6868B0A1434E92900AE008D /* UIApplication+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIApplication+Utils.h"; path = "ecma-utils/Classes/UIApplication+Utils.h"; sourceTree = "<group>"; };
+		E6868B0B1434E92900AE008D /* UIApplication+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+Utils.m"; path = "ecma-utils/Classes/UIApplication+Utils.m"; sourceTree = "<group>"; };
+		E6868B0D1434E9A400AE008D /* KontrafactCheckingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KontrafactCheckingController.h; sourceTree = "<group>"; };
+		E6868B0E1434E9A400AE008D /* KontrafactCheckingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KontrafactCheckingController.m; sourceTree = "<group>"; };
 		E69FC3D114325CF8001E8185 /* Kontrafaktunet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kontrafaktunet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E69FC3D514325CF8001E8185 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E69FC3D714325CF8001E8185 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -85,10 +98,6 @@
 		E69FC3EE14325CF8001E8185 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
 		E69FC3F614325D27001E8185 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		E69FC3FA1432630C001E8185 /* check-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-button.png"; sourceTree = "<group>"; };
-		E69FC3FB1432630C001E8185 /* checked-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checked-button.png"; sourceTree = "<group>"; };
-		E69FC3FC1432630C001E8185 /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
-		E69FC3FD1432630C001E8185 /* question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = question.png; sourceTree = "<group>"; };
-		E69FC40214326362001E8185 /* logo-and-description.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-and-description.png"; sourceTree = "<group>"; };
 		E69FC40414326783001E8185 /* checking-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checking-button.png"; sourceTree = "<group>"; };
 		E69FC40B14326B6E001E8185 /* NSError+REST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+REST.h"; sourceTree = "<group>"; };
 		E69FC40C14326B6E001E8185 /* NSError+REST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+REST.m"; sourceTree = "<group>"; };
@@ -145,8 +154,6 @@
 		E69FC48814327E14001E8185 /* CDataScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDataScanner_Extensions.m; path = json/Source/Extensions/CDataScanner_Extensions.m; sourceTree = "<group>"; };
 		E69FC48914327E14001E8185 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDictionary_JSONExtensions.h; path = json/Source/Extensions/NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
 		E69FC48A14327E14001E8185 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDictionary_JSONExtensions.m; path = json/Source/Extensions/NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
-		E69FC48D143281B7001E8185 /* fake-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fake-button.png"; sourceTree = "<group>"; };
-		E69FC48E143281B7001E8185 /* fake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fake.png; sourceTree = "<group>"; };
 		E69FC4C414339E8F001E8185 /* InfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoController.h; sourceTree = "<group>"; };
 		E69FC4C514339E8F001E8185 /* InfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoController.m; sourceTree = "<group>"; };
 		E69FC4C614339E90001E8185 /* InfoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoController.xib; sourceTree = "<group>"; };
@@ -204,6 +211,8 @@
 				E69FC3EA14325CF8001E8185 /* RootViewController.h */,
 				E69FC3EB14325CF8001E8185 /* RootViewController.m */,
 				E69FC3ED14325CF8001E8185 /* RootViewController.xib */,
+				E6868B0D1434E9A400AE008D /* KontrafactCheckingController.h */,
+				E6868B0E1434E9A400AE008D /* KontrafactCheckingController.m */,
 				E69FC4C414339E8F001E8185 /* InfoController.h */,
 				E69FC4C514339E8F001E8185 /* InfoController.m */,
 				E69FC4C614339E90001E8185 /* InfoController.xib */,
@@ -229,17 +238,16 @@
 		E69FC3F514325D11001E8185 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E62C30AE1433B51A005985B8 /* 5.JPG */,
-				E62C30A91433B33C005985B8 /* 8.JPG */,
-				E62C30A61433B32E005985B8 /* 2.JPG */,
-				E69FC48D143281B7001E8185 /* fake-button.png */,
-				E69FC48E143281B7001E8185 /* fake.png */,
+				E6868AF71434E32400AE008D /* back-button.png */,
+				E6868AF81434E32400AE008D /* check-bg.png */,
+				E6868AF91434E32400AE008D /* checked-bg.png */,
+				E6868AFA1434E32400AE008D /* checkother-button.png */,
+				E6868AFB1434E32400AE008D /* fake-bg.png */,
+				E6868AFC1434E32400AE008D /* info-button.png */,
+				E6868AFD1434E32400AE008D /* infoscreen-bg.png */,
+				E6868AFE1434E32400AE008D /* rootscreen-bg.png */,
 				E69FC40414326783001E8185 /* checking-button.png */,
-				E69FC40214326362001E8185 /* logo-and-description.png */,
 				E69FC3FA1432630C001E8185 /* check-button.png */,
-				E69FC3FB1432630C001E8185 /* checked-button.png */,
-				E69FC3FC1432630C001E8185 /* checkmark.png */,
-				E69FC3FD1432630C001E8185 /* question.png */,
 				E69FC3F614325D27001E8185 /* Default.png */,
 			);
 			name = Resources;
@@ -301,6 +309,10 @@
 		E69FC47814327D2F001E8185 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				E6868B0A1434E92900AE008D /* UIApplication+Utils.h */,
+				E6868B0B1434E92900AE008D /* UIApplication+Utils.m */,
+				E6868B071434E8B200AE008D /* KeyboardAvoider.h */,
+				E6868B081434E8B200AE008D /* KeyboardAvoider.m */,
 				E62C30AB1433B360005985B8 /* PagerController.h */,
 				E62C30AC1433B360005985B8 /* PagerController.m */,
 				E69FC4531432742B001E8185 /* CGGeometry+Utils.h */,
@@ -395,18 +407,17 @@
 				E69FC3EF14325CF8001E8185 /* RootViewController.xib in Resources */,
 				E69FC3F814325D27001E8185 /* Default.png in Resources */,
 				E69FC3FE1432630C001E8185 /* check-button.png in Resources */,
-				E69FC3FF1432630C001E8185 /* checked-button.png in Resources */,
-				E69FC4001432630C001E8185 /* checkmark.png in Resources */,
-				E69FC4011432630C001E8185 /* question.png in Resources */,
-				E69FC40314326362001E8185 /* logo-and-description.png in Resources */,
 				E69FC40514326783001E8185 /* checking-button.png in Resources */,
-				E69FC48F143281B7001E8185 /* fake-button.png in Resources */,
-				E69FC490143281B7001E8185 /* fake.png in Resources */,
 				E69FC4C814339E9C001E8185 /* InfoController.xib in Resources */,
-				E62C30A71433B32E005985B8 /* 2.JPG in Resources */,
-				E62C30AA1433B33C005985B8 /* 8.JPG in Resources */,
-				E62C30AF1433B51A005985B8 /* 5.JPG in Resources */,
 				E62C30D41433C01B005985B8 /* WebViewController.xib in Resources */,
+				E6868AFF1434E32400AE008D /* back-button.png in Resources */,
+				E6868B001434E32400AE008D /* check-bg.png in Resources */,
+				E6868B011434E32400AE008D /* checked-bg.png in Resources */,
+				E6868B021434E32400AE008D /* checkother-button.png in Resources */,
+				E6868B031434E32400AE008D /* fake-bg.png in Resources */,
+				E6868B041434E32400AE008D /* info-button.png in Resources */,
+				E6868B051434E32400AE008D /* infoscreen-bg.png in Resources */,
+				E6868B061434E32400AE008D /* rootscreen-bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +459,9 @@
 				E69FC4C714339E9C001E8185 /* InfoController.m in Sources */,
 				E62C30AD1433B360005985B8 /* PagerController.m in Sources */,
 				E62C30D31433C01B005985B8 /* WebViewController.m in Sources */,
+				E6868B091434E8B200AE008D /* KeyboardAvoider.m in Sources */,
+				E6868B0C1434E92900AE008D /* UIApplication+Utils.m in Sources */,
+				E6868B101434E9A400AE008D /* KontrafactCheckingController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
