@@ -1,6 +1,4 @@
 #import <UIKit/UIKit.h>
-#import "PagerController.h"
-#import "WebViewController.h"
 
 @class InfoController;
 
@@ -9,16 +7,11 @@
 @end
 
 
-@interface InfoController : UIViewController<PagerControllerDelegate, PagerControllerDataSource, WebViewControllerDelegate> {
+@interface InfoController : UIViewController {
     id<InfoControllerDelegate> delegate;
-    
-    IBOutlet PagerController *pageController;
-    IBOutlet UIPageControl *pageControl;
 }
 @property(nonatomic, assign) id<InfoControllerDelegate> delegate;
 
 -(IBAction)onBack;
--(IBAction)onGotoSite;
--(IBAction)onPageChanged;
 
 @end

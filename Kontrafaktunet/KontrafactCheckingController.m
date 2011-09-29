@@ -187,6 +187,8 @@ typedef enum{
 #pragma mark events
 
 -(IBAction)onCheck{
+    if(self.code.length==0) return;
+    
     [self updateUI:csChecking];    
     [self hideKeyboard];
     
