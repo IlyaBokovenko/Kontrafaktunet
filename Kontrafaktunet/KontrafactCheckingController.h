@@ -18,4 +18,6 @@
 -(IBAction)onCheckOther;
 -(IBAction)beginEditing;
 
+-(void)checkCode:(NSString*)code;
+
 @end

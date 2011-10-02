@@ -10,6 +10,13 @@
 		E62C30AD1433B360005985B8 /* PagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E62C30AC1433B360005985B8 /* PagerController.m */; };
 		E62C30D31433C01B005985B8 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E62C30D11433C01B005985B8 /* WebViewController.m */; };
 		E62C30D41433C01B005985B8 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E62C30D21433C01B005985B8 /* WebViewController.xib */; };
+		E62C9A641438868C001C2264 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = E62C9A631438868C001C2264 /* camera.png */; };
+		E674274E1436437500714C35 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E674274D1436437500714C35 /* AVFoundation.framework */; };
+		E67427501436437E00714C35 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E674274F1436437E00714C35 /* AudioToolbox.framework */; };
+		E67427521436438B00714C35 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67427511436438B00714C35 /* CoreVideo.framework */; };
+		E67427541436439800714C35 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67427531436439800714C35 /* CoreMedia.framework */; };
+		E6742756143643A900714C35 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E6742755143643A900714C35 /* libiconv.dylib */; };
+		E6742758143643B200714C35 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6742757143643B200714C35 /* AddressBook.framework */; };
 		E6868AFF1434E32400AE008D /* back-button.png in Resources */ = {isa = PBXBuildFile; fileRef = E6868AF71434E32400AE008D /* back-button.png */; };
 		E6868B001434E32400AE008D /* check-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E6868AF81434E32400AE008D /* check-bg.png */; };
 		E6868B011434E32400AE008D /* checked-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E6868AF91434E32400AE008D /* checked-bg.png */; };
@@ -28,7 +35,7 @@
 		E69FC3E314325CF8001E8185 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC3E214325CF8001E8185 /* main.m */; };
 		E69FC3E614325CF8001E8185 /* KontrafaktunetAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC3E514325CF8001E8185 /* KontrafaktunetAppDelegate.m */; };
 		E69FC3E914325CF8001E8185 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69FC3E714325CF8001E8185 /* MainWindow.xib */; };
-		E69FC3EC14325CF8001E8185 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC3EB14325CF8001E8185 /* RootViewController.m */; };
+		E69FC3EC14325CF8001E8185 /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E69FC3EB14325CF8001E8185 /* RootViewController.mm */; };
 		E69FC3EF14325CF8001E8185 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69FC3ED14325CF8001E8185 /* RootViewController.xib */; };
 		E69FC3F814325D27001E8185 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E69FC3F614325D27001E8185 /* Default.png */; };
 		E69FC3FE1432630C001E8185 /* check-button.png in Resources */ = {isa = PBXBuildFile; fileRef = E69FC3FA1432630C001E8185 /* check-button.png */; };
@@ -60,7 +67,32 @@
 		E69FC48C14327E14001E8185 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC48A14327E14001E8185 /* NSDictionary_JSONExtensions.m */; };
 		E69FC4C714339E9C001E8185 /* InfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC4C514339E8F001E8185 /* InfoController.m */; };
 		E69FC4C814339E9C001E8185 /* InfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69FC4C614339E90001E8185 /* InfoController.xib */; };
+		E6BADD9C1438B72C002BEF0D /* libZXingWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6BADD9B1438B72C002BEF0D /* libZXingWidget.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6BADD951438B6DE002BEF0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6BADD8D1438B6DD002BEF0D /* ZXingWidget.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = ZXingWidget;
+		};
+		E6BADD971438B6DE002BEF0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6BADD8D1438B6DD002BEF0D /* ZXingWidget.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D60398D13DF7CAD006F4B51;
+			remoteInfo = ZXingTests;
+		};
+		E6BADD991438B6E5002BEF0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6BADD8D1438B6DD002BEF0D /* ZXingWidget.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = ZXingWidget;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E62C30AB1433B360005985B8 /* PagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PagerController.h; path = "ecma-utils/Classes/PagerController.h"; sourceTree = "<group>"; };
@@ -68,6 +100,13 @@
 		E62C30D01433C01B005985B8 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		E62C30D11433C01B005985B8 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		E62C30D21433C01B005985B8 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		E62C9A631438868C001C2264 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		E674274D1436437500714C35 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E674274F1436437E00714C35 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E67427511436438B00714C35 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		E67427531436439800714C35 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		E6742755143643A900714C35 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		E6742757143643B200714C35 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		E6868AF71434E32400AE008D /* back-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-button.png"; sourceTree = "<group>"; };
 		E6868AF81434E32400AE008D /* check-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-bg.png"; sourceTree = "<group>"; };
 		E6868AF91434E32400AE008D /* checked-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checked-bg.png"; sourceTree = "<group>"; };
@@ -94,7 +133,7 @@
 		E69FC3E514325CF8001E8185 /* KontrafaktunetAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KontrafaktunetAppDelegate.m; sourceTree = "<group>"; };
 		E69FC3E814325CF8001E8185 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		E69FC3EA14325CF8001E8185 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		E69FC3EB14325CF8001E8185 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		E69FC3EB14325CF8001E8185 /* RootViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RootViewController.mm; sourceTree = "<group>"; };
 		E69FC3EE14325CF8001E8185 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
 		E69FC3F614325D27001E8185 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		E69FC3FA1432630C001E8185 /* check-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-button.png"; sourceTree = "<group>"; };
@@ -157,6 +196,8 @@
 		E69FC4C414339E8F001E8185 /* InfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoController.h; sourceTree = "<group>"; };
 		E69FC4C514339E8F001E8185 /* InfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoController.m; sourceTree = "<group>"; };
 		E69FC4C614339E90001E8185 /* InfoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoController.xib; sourceTree = "<group>"; };
+		E6BADD8D1438B6DD002BEF0D /* ZXingWidget.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZXingWidget.xcodeproj; path = zxing/iphone/ZXingWidget/ZXingWidget.xcodeproj; sourceTree = "<group>"; };
+		E6BADD9B1438B72C002BEF0D /* libZXingWidget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libZXingWidget.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +205,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6BADD9C1438B72C002BEF0D /* libZXingWidget.a in Frameworks */,
+				E6742758143643B200714C35 /* AddressBook.framework in Frameworks */,
+				E6742756143643A900714C35 /* libiconv.dylib in Frameworks */,
+				E67427541436439800714C35 /* CoreMedia.framework in Frameworks */,
+				E67427521436438B00714C35 /* CoreVideo.framework in Frameworks */,
+				E67427501436437E00714C35 /* AudioToolbox.framework in Frameworks */,
+				E674274E1436437500714C35 /* AVFoundation.framework in Frameworks */,
 				E69FC3D614325CF8001E8185 /* UIKit.framework in Frameworks */,
 				E69FC3D814325CF8001E8185 /* Foundation.framework in Frameworks */,
 				E69FC3DA14325CF8001E8185 /* CoreGraphics.framework in Frameworks */,
@@ -176,6 +224,8 @@
 		E69FC3C614325CF8001E8185 = {
 			isa = PBXGroup;
 			children = (
+				E6BADD9B1438B72C002BEF0D /* libZXingWidget.a */,
+				E6BADD8D1438B6DD002BEF0D /* ZXingWidget.xcodeproj */,
 				E69FC3DB14325CF8001E8185 /* Kontrafaktunet */,
 				E69FC3F514325D11001E8185 /* Resources */,
 				E69FC40614326B28001E8185 /* Other Sources */,
@@ -195,6 +245,12 @@
 		E69FC3D414325CF8001E8185 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E6742757143643B200714C35 /* AddressBook.framework */,
+				E6742755143643A900714C35 /* libiconv.dylib */,
+				E67427531436439800714C35 /* CoreMedia.framework */,
+				E67427511436438B00714C35 /* CoreVideo.framework */,
+				E674274F1436437E00714C35 /* AudioToolbox.framework */,
+				E674274D1436437500714C35 /* AVFoundation.framework */,
 				E69FC3D514325CF8001E8185 /* UIKit.framework */,
 				E69FC3D714325CF8001E8185 /* Foundation.framework */,
 				E69FC3D914325CF8001E8185 /* CoreGraphics.framework */,
@@ -209,7 +265,7 @@
 				E69FC3E514325CF8001E8185 /* KontrafaktunetAppDelegate.m */,
 				E69FC3E714325CF8001E8185 /* MainWindow.xib */,
 				E69FC3EA14325CF8001E8185 /* RootViewController.h */,
-				E69FC3EB14325CF8001E8185 /* RootViewController.m */,
+				E69FC3EB14325CF8001E8185 /* RootViewController.mm */,
 				E69FC3ED14325CF8001E8185 /* RootViewController.xib */,
 				E6868B0D1434E9A400AE008D /* KontrafactCheckingController.h */,
 				E6868B0E1434E9A400AE008D /* KontrafactCheckingController.m */,
@@ -238,6 +294,7 @@
 		E69FC3F514325D11001E8185 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E62C9A631438868C001C2264 /* camera.png */,
 				E6868AF71434E32400AE008D /* back-button.png */,
 				E6868AF81434E32400AE008D /* check-bg.png */,
 				E6868AF91434E32400AE008D /* checked-bg.png */,
@@ -355,6 +412,15 @@
 			name = json;
 			sourceTree = "<group>";
 		};
+		E6BADD8E1438B6DD002BEF0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6BADD961438B6DE002BEF0D /* libZXingWidget.a */,
+				E6BADD981438B6DE002BEF0D /* ZXingTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -369,6 +435,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E6BADD9A1438B6E5002BEF0D /* PBXTargetDependency */,
 			);
 			name = Kontrafaktunet;
 			productName = Kontrafaktunet;
@@ -390,12 +457,35 @@
 			mainGroup = E69FC3C614325CF8001E8185;
 			productRefGroup = E69FC3D214325CF8001E8185 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E6BADD8E1438B6DD002BEF0D /* Products */;
+					ProjectRef = E6BADD8D1438B6DD002BEF0D /* ZXingWidget.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E69FC3D014325CF8001E8185 /* Kontrafaktunet */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E6BADD961438B6DE002BEF0D /* libZXingWidget.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libZXingWidget.a;
+			remoteRef = E6BADD951438B6DE002BEF0D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E6BADD981438B6DE002BEF0D /* ZXingTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ZXingTests.octest;
+			remoteRef = E6BADD971438B6DE002BEF0D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E69FC3CF14325CF8001E8185 /* Resources */ = {
@@ -418,6 +508,7 @@
 				E6868B041434E32400AE008D /* info-button.png in Resources */,
 				E6868B051434E32400AE008D /* infoscreen-bg.png in Resources */,
 				E6868B061434E32400AE008D /* rootscreen-bg.png in Resources */,
+				E62C9A641438868C001C2264 /* camera.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +521,7 @@
 			files = (
 				E69FC3E314325CF8001E8185 /* main.m in Sources */,
 				E69FC3E614325CF8001E8185 /* KontrafaktunetAppDelegate.m in Sources */,
-				E69FC3EC14325CF8001E8185 /* RootViewController.m in Sources */,
+				E69FC3EC14325CF8001E8185 /* RootViewController.mm in Sources */,
 				E69FC41414326B6E001E8185 /* NSError+REST.m in Sources */,
 				E69FC41514326B6E001E8185 /* NSString+Web.m in Sources */,
 				E69FC41614326B6E001E8185 /* RESTService.m in Sources */,
@@ -466,6 +557,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6BADD9A1438B6E5002BEF0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZXingWidget;
+			targetProxy = E6BADD991438B6E5002BEF0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E69FC3DE14325CF8001E8185 /* InfoPlist.strings */ = {
@@ -535,7 +634,15 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Kontrafaktunet/Kontrafaktunet-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"zxing/iphone/ZXingWidget/Classes/**",
+					zxing/cpp/core/src/,
+				);
 				INFOPLIST_FILE = "Kontrafaktunet/Kontrafaktunet-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -548,7 +655,15 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Kontrafaktunet/Kontrafaktunet-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"zxing/iphone/ZXingWidget/Classes/**",
+					zxing/cpp/core/src/,
+				);
 				INFOPLIST_FILE = "Kontrafaktunet/Kontrafaktunet-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;

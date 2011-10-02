@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/svn/!svn/ver/1923/trunk/cpp
+END
+ios_Prefix.pch
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/1773/trunk/cpp/ios_Prefix.pch
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/1773/trunk/cpp/.gitignore
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/1902/trunk/cpp/SConscript
+END
+SConstruct
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/1092/trunk/cpp/SConstruct
+END
+format
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/1092/trunk/cpp/format
+END
+.svnignore
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/1144/trunk/cpp/.svnignore
+END
+astyle-options
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/1092/trunk/cpp/astyle-options
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/1549/trunk/cpp/README
+END
+blackboxtest.sh
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1489/trunk/cpp/blackboxtest.sh
+END

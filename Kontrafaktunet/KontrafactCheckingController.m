@@ -14,11 +14,34 @@ typedef enum{
     csFake
 }eCheckState;
 
+@interface NSMutableString(Utils)
+-(NSString*)biteFourCharacters;
+@end
+
+@implementation NSMutableString(Utils)
+-(NSString*)biteFourCharacters{
+    NSRange range = NSMakeRange(0, MIN(4, self.length));
+    if(range.length == 0) return @"";
+    NSString *bited = [self substringWithRange:range];
+    [self deleteCharactersInRange:range];
+    return bited;
+}
+@end
+
 
 @implementation KontrafactCheckingController
 
 -(NSString*)code{
     return [NSString stringWithFormat:@"%@%@%@%@", f1.text, f2.text, f3.text, f4.text];
+}
+
+-(void)setCode:(NSString*)code{
+    NSMutableString* trimmed = [[[code stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@" -"]] 
+                                 mutableCopy] autorelease];
+    f1.text = [trimmed biteFourCharacters];
+    f2.text = [trimmed biteFourCharacters];
+    f3.text = [trimmed biteFourCharacters];
+    f4.text = [trimmed biteFourCharacters];
 }
 
 -(void)updateCheckButton:(eCheckState)checkState{
@@ -88,11 +111,11 @@ typedef enum{
 }
 
 
--(id)checkCode{
+-(id)privateCheckCode:(NSString*)code{
     RESTService *service = [[[RESTService alloc] initWithBaseUrl:@"http://code.slognosti.ru/api.ashx"] autorelease];
     WebParams *params = [WebParams params];
     [params addParam:@"check" forKey:@"command"];
-    [params addParam:self.code forKey:@"code"];
+    [params addParam:code forKey:@"code"];
     
     NSError *error = nil;
     id result = [service get:@"" withParams:params error:&error]; 
@@ -155,6 +178,20 @@ typedef enum{
     }
 }
 
+-(void)asyncCheckCode:(NSString*)code{
+    [self updateUI:csChecking];    
+    [self hideKeyboard];
+    
+    UIBlocker *blocker =[UIBlocker blockerForView:self.view];
+    blocker.indicator = indicator;
+    
+    BlockingAsyncCallback *cb = [BlockingAsyncCallback callbackWithDelegate:self 
+                                                                  onSuccess:@selector(onChecked:) 
+                                                                    onError:@selector(onCheckError:) 
+                                                                    blocker:blocker];
+    [[[AsyncObject asyncObjectForTarget:self] proxyWithCallback:cb] privateCheckCode:code];
+}
+
 #pragma mark lifecycle
 
 - (void)viewDidLoad
@@ -184,22 +221,18 @@ typedef enum{
 	return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+#pragma mark accessing
+
+-(void)checkCode:(NSString*)code{
+    self.code = code;
+    [self asyncCheckCode:code];
+}
+
 #pragma mark events
 
 -(IBAction)onCheck{
     if(self.code.length==0) return;
-    
-    [self updateUI:csChecking];    
-    [self hideKeyboard];
-    
-    UIBlocker *blocker =[UIBlocker blockerForView:self.view];
-    blocker.indicator = indicator;
-    
-    BlockingAsyncCallback *cb = [BlockingAsyncCallback callbackWithDelegate:self 
-                                                                  onSuccess:@selector(onChecked:) 
-                                                                    onError:@selector(onCheckError:) 
-                                                                    blocker:blocker];
-    [[[AsyncObject asyncObjectForTarget:self] proxyWithCallback:cb] checkCode];
+    [self asyncCheckCode:self.code];
 }
 
 
