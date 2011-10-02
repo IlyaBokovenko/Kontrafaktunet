@@ -73,17 +73,6 @@ typedef enum{
     f4.text = [[trimmed biteFourCharacters] withDeadspace];
 }
 
--(void)updateCheckButton:(eCheckState)checkState{
-    NSString *name = [[NSArray arrayWithObjects:@"check-button.png", @"checking-button.png", @"checked-button.png", @"fake-button.png", nil] objectAtIndex:checkState];
-    if(checkState == csChecking){
-        check.enabled = NO;
-    }else{
-        check.enabled = YES;
-        [check setImage:[UIImage imageNamed:name] forState:UIControlStateNormal];
-    }
-}
-
-
 -(void)showTextFields:(BOOL)show{
     f1.hidden = !show;
     f2.hidden = !show;
@@ -326,12 +315,6 @@ typedef enum{
     }
 
     return YES;
-//    if(textField.text.length > 0 && result.length == 0){
-//        [self switchToPrevField:textField];
-//    }else if(result.length >= 4){
-//        [self switchToNextField:textField];
-//    }
-//    return YES;
 }
 
 #pragma mark UIAlertViewDelegate
