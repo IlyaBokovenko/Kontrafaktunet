@@ -6,6 +6,9 @@
 #import "NSError+Utils.h"
 #import "CJSONDeserializer.h"
 #import "UIAlertView+Utils.h"
+#import "Reachability+Utils.h"
+#import "UIAlertView+Utils.h"
+#import "KontrafaktunetAppDelegate.h"
 
 typedef enum{
     csInitial,
@@ -111,7 +114,7 @@ typedef enum{
 }
 
 
--(id)privateCheckCode:(NSString*)code{
+-(id)checkCodeViaServer:(NSString*)code{
     RESTService *service = [[[RESTService alloc] initWithBaseUrl:@"http://code.slognosti.ru/api.ashx"] autorelease];
     WebParams *params = [WebParams params];
     [params addParam:@"check" forKey:@"command"];
@@ -178,7 +181,7 @@ typedef enum{
     }
 }
 
--(void)asyncCheckCode:(NSString*)code{
+-(void)asyncCheckCodeViaServer:(NSString*)code{
     [self updateUI:csChecking];    
     [self hideKeyboard];
     
@@ -189,7 +192,22 @@ typedef enum{
                                                                   onSuccess:@selector(onChecked:) 
                                                                     onError:@selector(onCheckError:) 
                                                                     blocker:blocker];
-    [[[AsyncObject asyncObjectForTarget:self] proxyWithCallback:cb] privateCheckCode:code];
+    [[[AsyncObject asyncObjectForTarget:self] proxyWithCallback:cb] checkCodeViaServer:code];
+}
+
+
+-(UIViewController*)rootController{
+        return ((KontrafaktunetAppDelegate*)([UIApplication sharedApplication].delegate)).rootController;
+}
+
+-(void)checkCodeViaSms:(NSString*)code{
+    MFMessageComposeViewController *msgController = [[MFMessageComposeViewController new] autorelease];
+    msgController.messageComposeDelegate = self;
+    msgController.body = code;
+    msgController.recipients = [NSArray arrayWithObject:@"+79117848886"];
+    msgController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+
+    [self.rootController presentModalViewController:msgController animated:YES];
 }
 
 #pragma mark lifecycle
@@ -225,14 +243,24 @@ typedef enum{
 
 -(void)checkCode:(NSString*)code{
     self.code = code;
-    [self asyncCheckCode:code];
+    [Reachability setHostName:@"code.slognosti.ru"];
+    if([Reachability isNetworkReachable]){
+      [self asyncCheckCodeViaServer:code];  
+    }else{
+        UIAlertView* alert = [[[UIAlertView alloc] initWithTitle:@"Сервер не доступен"
+                                                         message:@"Проверить код с помощью бесплатного смс?"
+                                                        delegate:self
+                                               cancelButtonTitle:nil
+                                               otherButtonTitles:@"Да", @"Нет", nil] autorelease];
+        [alert performSelectorOnMainThread:@selector(show) withObject:nil waitUntilDone:NO];
+    }
 }
 
 #pragma mark events
 
 -(IBAction)onCheck{
     if(self.code.length==0) return;
-    [self asyncCheckCode:self.code];
+    [self checkCode:self.code];
 }
 
 
@@ -255,6 +283,26 @@ typedef enum{
         [self switchToNextField:textField];
     }
     return YES;
+}
+
+#pragma mark UIAlertViewDelegate
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex{
+    if(buttonIndex == 0){
+        [self checkCodeViaSms:self.code];  
+    }
+}
+
+#pragma mark MFMessageComposeViewControllerDelegate
+
+- (void)messageComposeViewController:(MFMessageComposeViewController *)controller 
+                 didFinishWithResult:(MessageComposeResult)result{
+    [self.rootController dismissModalViewControllerAnimated:YES];
+    if(result == MessageComposeResultSent){
+        [UIAlertView showAlertViewWithTitle:@"Успех" message:@"Через некоторое время сервер вышлет Вам результаты проверки"];
+    }else if(result == MessageComposeResultFailed){
+        [UIAlertView showAlertViewWithTitle:@"Неудача" message:@"Не удалось отправить смс!"];
+    }
 }
 
 @end

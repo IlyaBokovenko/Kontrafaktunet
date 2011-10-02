@@ -1,5 +1,6 @@
 #import <ZXingWidgetController.h>
 #import <QRCodeReader.h>
+#import <MultiFormatOneDReader.h>
 
 #import "RootViewController.h"
 #import "KontrafactCheckingController.h"
@@ -38,7 +39,7 @@
 -(void)onScan{
     [zctrl release];
     zctrl = [[ZXingWidgetController alloc] initWithDelegate:self showCancel:YES OneDMode:NO];
-    zctrl.readers = [NSSet setWithObject:[[QRCodeReader new] autorelease]];
+    zctrl.readers = [NSSet setWithObjects:[[QRCodeReader new] autorelease], [[MultiFormatOneDReader new] autorelease], nil];
     zctrl.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     [self presentModalViewController:zctrl animated:YES];
 }

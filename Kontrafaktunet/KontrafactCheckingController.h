@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
 
-
-@interface KontrafactCheckingController : UIViewController {
+@interface KontrafactCheckingController : UIViewController<UIAlertViewDelegate, MFMessageComposeViewControllerDelegate> {
     IBOutlet UITextField *f1;
     IBOutlet UITextField *f2;
     IBOutlet UITextField *f3;

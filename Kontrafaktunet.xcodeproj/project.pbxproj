@@ -68,6 +68,10 @@
 		E69FC4C714339E9C001E8185 /* InfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC4C514339E8F001E8185 /* InfoController.m */; };
 		E69FC4C814339E9C001E8185 /* InfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69FC4C614339E90001E8185 /* InfoController.xib */; };
 		E6BADD9C1438B72C002BEF0D /* libZXingWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6BADD9B1438B72C002BEF0D /* libZXingWidget.a */; };
+		E6BADD9E1438CEDE002BEF0D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6BADD9D1438CEDE002BEF0D /* MessageUI.framework */; };
+		E6BADDA31438D053002BEF0D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BADDA01438D053002BEF0D /* Reachability.m */; };
+		E6BADDA41438D053002BEF0D /* Reachability+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BADDA21438D053002BEF0D /* Reachability+Utils.m */; };
+		E6BADDA91438D2A8002BEF0D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6BADDA81438D2A8002BEF0D /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,7 +137,7 @@
 		E69FC3E514325CF8001E8185 /* KontrafaktunetAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KontrafaktunetAppDelegate.m; sourceTree = "<group>"; };
 		E69FC3E814325CF8001E8185 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		E69FC3EA14325CF8001E8185 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		E69FC3EB14325CF8001E8185 /* RootViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RootViewController.mm; sourceTree = "<group>"; };
+		E69FC3EB14325CF8001E8185 /* RootViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = RootViewController.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		E69FC3EE14325CF8001E8185 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
 		E69FC3F614325D27001E8185 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		E69FC3FA1432630C001E8185 /* check-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-button.png"; sourceTree = "<group>"; };
@@ -198,6 +202,12 @@
 		E69FC4C614339E90001E8185 /* InfoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoController.xib; sourceTree = "<group>"; };
 		E6BADD8D1438B6DD002BEF0D /* ZXingWidget.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZXingWidget.xcodeproj; path = zxing/iphone/ZXingWidget/ZXingWidget.xcodeproj; sourceTree = "<group>"; };
 		E6BADD9B1438B72C002BEF0D /* libZXingWidget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libZXingWidget.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6BADD9D1438CEDE002BEF0D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		E6BADD9F1438D053002BEF0D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = "ecma-utils/Classes/Reachability.h"; sourceTree = "<group>"; };
+		E6BADDA01438D053002BEF0D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = "ecma-utils/Classes/Reachability.m"; sourceTree = "<group>"; };
+		E6BADDA11438D053002BEF0D /* Reachability+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Reachability+Utils.h"; path = "ecma-utils/Classes/Reachability+Utils.h"; sourceTree = "<group>"; };
+		E6BADDA21438D053002BEF0D /* Reachability+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Reachability+Utils.m"; path = "ecma-utils/Classes/Reachability+Utils.m"; sourceTree = "<group>"; };
+		E6BADDA81438D2A8002BEF0D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +215,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6BADDA91438D2A8002BEF0D /* SystemConfiguration.framework in Frameworks */,
+				E6BADD9E1438CEDE002BEF0D /* MessageUI.framework in Frameworks */,
 				E6BADD9C1438B72C002BEF0D /* libZXingWidget.a in Frameworks */,
 				E6742758143643B200714C35 /* AddressBook.framework in Frameworks */,
 				E6742756143643A900714C35 /* libiconv.dylib in Frameworks */,
@@ -224,6 +236,7 @@
 		E69FC3C614325CF8001E8185 = {
 			isa = PBXGroup;
 			children = (
+				E6BADDA81438D2A8002BEF0D /* SystemConfiguration.framework */,
 				E6BADD9B1438B72C002BEF0D /* libZXingWidget.a */,
 				E6BADD8D1438B6DD002BEF0D /* ZXingWidget.xcodeproj */,
 				E69FC3DB14325CF8001E8185 /* Kontrafaktunet */,
@@ -245,6 +258,7 @@
 		E69FC3D414325CF8001E8185 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E6BADD9D1438CEDE002BEF0D /* MessageUI.framework */,
 				E6742757143643B200714C35 /* AddressBook.framework */,
 				E6742755143643A900714C35 /* libiconv.dylib */,
 				E67427531436439800714C35 /* CoreMedia.framework */,
@@ -366,6 +380,10 @@
 		E69FC47814327D2F001E8185 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				E6BADD9F1438D053002BEF0D /* Reachability.h */,
+				E6BADDA01438D053002BEF0D /* Reachability.m */,
+				E6BADDA11438D053002BEF0D /* Reachability+Utils.h */,
+				E6BADDA21438D053002BEF0D /* Reachability+Utils.m */,
 				E6868B0A1434E92900AE008D /* UIApplication+Utils.h */,
 				E6868B0B1434E92900AE008D /* UIApplication+Utils.m */,
 				E6868B071434E8B200AE008D /* KeyboardAvoider.h */,
@@ -553,6 +571,8 @@
 				E6868B091434E8B200AE008D /* KeyboardAvoider.m in Sources */,
 				E6868B0C1434E92900AE008D /* UIApplication+Utils.m in Sources */,
 				E6868B101434E9A400AE008D /* KontrafactCheckingController.m in Sources */,
+				E6BADDA31438D053002BEF0D /* Reachability.m in Sources */,
+				E6BADDA41438D053002BEF0D /* Reachability+Utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
