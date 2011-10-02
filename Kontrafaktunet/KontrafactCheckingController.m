@@ -32,20 +32,45 @@ typedef enum{
 }
 @end
 
+@interface NSString(Utils)
+-(NSString*)withoutDeadspace;
+-(NSString*)withDeadspace;
+-(NSString*)withoutLast;
+@end
+
+@implementation NSString(Utils)
+-(NSString*)withoutDeadspace{
+    return [self stringByReplacingOccurrencesOfString:@"\u200B" withString:@""];
+}
+-(NSString*)withDeadspace{
+    return [NSString stringWithFormat:@"\u200B%@", self];
+}
+-(NSString*)withoutLast{
+    return [self stringByReplacingCharactersInRange:(NSMakeRange(self.length-1, 1)) withString:@""];
+}
+@end
+
+
 
 @implementation KontrafactCheckingController
 
 -(NSString*)code{
-    return [NSString stringWithFormat:@"%@%@%@%@", f1.text, f2.text, f3.text, f4.text];
+    NSString* result = [NSString stringWithFormat:@"%@%@%@%@", 
+            [f1.text withoutDeadspace], 
+            [f2.text withoutDeadspace], 
+            [f3.text withoutDeadspace], 
+            [f4.text withoutDeadspace]];
+    
+    return result;
 }
 
 -(void)setCode:(NSString*)code{
     NSMutableString* trimmed = [[[code stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@" -"]] 
                                  mutableCopy] autorelease];
-    f1.text = [trimmed biteFourCharacters];
-    f2.text = [trimmed biteFourCharacters];
-    f3.text = [trimmed biteFourCharacters];
-    f4.text = [trimmed biteFourCharacters];
+    f1.text = [[trimmed biteFourCharacters] withDeadspace];
+    f2.text = [[trimmed biteFourCharacters] withDeadspace];
+    f3.text = [[trimmed biteFourCharacters] withDeadspace];
+    f4.text = [[trimmed biteFourCharacters] withDeadspace];
 }
 
 -(void)updateCheckButton:(eCheckState)checkState{
@@ -67,10 +92,10 @@ typedef enum{
 }
 
 -(void)clearFields{
-    f1.text = @"";
-    f2.text = @"";
-    f3.text = @"";
-    f4.text = @"";
+    f1.text = [@"" withDeadspace];
+    f2.text = [@"" withDeadspace];
+    f3.text = [@"" withDeadspace];
+    f4.text = [@"" withDeadspace];
 }
 
 -(void)updateUI:(eCheckState)checkState{
@@ -174,10 +199,13 @@ typedef enum{
 
 -(void)switchToPrevField:(UITextField*)f{
     if(f == f4){
+        f3.text = [f3.text withoutLast];
         [self focus:f3];
     }else if(f == f3){
+        f2.text = [f2.text withoutLast];
         [self focus:f2];
     }else if(f == f2){
+        f1.text = [f1.text withoutLast];
         [self focus:f1];
     }
 }
@@ -255,7 +283,7 @@ typedef enum{
     BOOL isReachable = [Reachability isNetworkReachable];
     [rootBlocker unblockUI];
     
-    if(/*isReachable*/NO){
+    if(isReachable){
         [self asyncCheckCodeViaServer:code];  
     }else{
         UIAlertView* alert = [[[UIAlertView alloc] initWithTitle:@"Сервер не доступен"
@@ -288,12 +316,22 @@ typedef enum{
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
     NSString *result = [textField.text stringByReplacingCharactersInRange:range withString:string];
-    if(textField.text.length > 0 && result.length == 0){
+    
+    if(result.length == 0){
         [self switchToPrevField:textField];
-    }else if(result.length >= 4){
+        return NO;
+    }else if([result withoutDeadspace].length >= 4){
         [self switchToNextField:textField];
+        return YES;
     }
+
     return YES;
+//    if(textField.text.length > 0 && result.length == 0){
+//        [self switchToPrevField:textField];
+//    }else if(result.length >= 4){
+//        [self switchToNextField:textField];
+//    }
+//    return YES;
 }
 
 #pragma mark UIAlertViewDelegate
@@ -311,9 +349,9 @@ typedef enum{
     [rootBlocker unblockUI];
     [self.rootController dismissModalViewControllerAnimated:YES];
     if(result == MessageComposeResultSent){
-        [UIAlertView showAlertViewWithTitle:@"Успех" message:@"Через некоторое время сервер вышлет Вам результаты проверки"];
+        [UIAlertView showAlertViewWithTitle:@"Успешно" message:@"Через некоторое время сервер вышлет Вам результаты проверки"];
     }else if(result == MessageComposeResultFailed){
-        [UIAlertView showAlertViewWithTitle:@"Неудача" message:@"Не удалось отправить смс!"];
+        [UIAlertView showAlertViewWithTitle:@"" message:@"Не удалось отправить смс!"];
     }
 }
 
