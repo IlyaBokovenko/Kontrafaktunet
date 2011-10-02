@@ -1,6 +1,8 @@
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
 
+@class UIBlocker;
+
 @interface KontrafactCheckingController : UIViewController<UIAlertViewDelegate, MFMessageComposeViewControllerDelegate> {
     IBOutlet UITextField *f1;
     IBOutlet UITextField *f2;
@@ -12,6 +14,8 @@
     
     IBOutlet UIActivityIndicatorView *indicator;    
     IBOutlet UIImageView *bgImage;
+    
+    UIBlocker *rootBlocker;
 }
 
 -(IBAction)onCheck;

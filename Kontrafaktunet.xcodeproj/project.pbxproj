@@ -72,6 +72,8 @@
 		E6BADDA31438D053002BEF0D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BADDA01438D053002BEF0D /* Reachability.m */; };
 		E6BADDA41438D053002BEF0D /* Reachability+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BADDA21438D053002BEF0D /* Reachability+Utils.m */; };
 		E6BADDA91438D2A8002BEF0D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6BADDA81438D2A8002BEF0D /* SystemConfiguration.framework */; };
+		E6BADDCC143907A0002BEF0D /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BADDCB143907A0002BEF0D /* Settings.m */; };
+		E6BADDD814390BC8002BEF0D /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6BADDD714390BC8002BEF0D /* Settings.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -208,6 +210,9 @@
 		E6BADDA11438D053002BEF0D /* Reachability+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Reachability+Utils.h"; path = "ecma-utils/Classes/Reachability+Utils.h"; sourceTree = "<group>"; };
 		E6BADDA21438D053002BEF0D /* Reachability+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Reachability+Utils.m"; path = "ecma-utils/Classes/Reachability+Utils.m"; sourceTree = "<group>"; };
 		E6BADDA81438D2A8002BEF0D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E6BADDCA143907A0002BEF0D /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		E6BADDCB143907A0002BEF0D /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		E6BADDD714390BC8002BEF0D /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +294,8 @@
 				E62C30D01433C01B005985B8 /* WebViewController.h */,
 				E62C30D11433C01B005985B8 /* WebViewController.m */,
 				E62C30D21433C01B005985B8 /* WebViewController.xib */,
+				E6BADDCA143907A0002BEF0D /* Settings.h */,
+				E6BADDCB143907A0002BEF0D /* Settings.m */,
 				E69FC3DC14325CF8001E8185 /* Supporting Files */,
 			);
 			path = Kontrafaktunet;
@@ -308,6 +315,7 @@
 		E69FC3F514325D11001E8185 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E6BADDD714390BC8002BEF0D /* Settings.plist */,
 				E62C9A631438868C001C2264 /* camera.png */,
 				E6868AF71434E32400AE008D /* back-button.png */,
 				E6868AF81434E32400AE008D /* check-bg.png */,
@@ -527,6 +535,7 @@
 				E6868B051434E32400AE008D /* infoscreen-bg.png in Resources */,
 				E6868B061434E32400AE008D /* rootscreen-bg.png in Resources */,
 				E62C9A641438868C001C2264 /* camera.png in Resources */,
+				E6BADDD814390BC8002BEF0D /* Settings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +582,7 @@
 				E6868B101434E9A400AE008D /* KontrafactCheckingController.m in Sources */,
 				E6BADDA31438D053002BEF0D /* Reachability.m in Sources */,
 				E6BADDA41438D053002BEF0D /* Reachability+Utils.m in Sources */,
+				E6BADDCC143907A0002BEF0D /* Settings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

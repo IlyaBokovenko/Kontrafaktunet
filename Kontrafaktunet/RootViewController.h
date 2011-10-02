@@ -4,6 +4,7 @@
 
 @protocol ZXingDelegate;
 @class ZXingWidgetController;
+@class UIBlocker;
 
 @class KontrafactCheckingController;
 
@@ -11,6 +12,7 @@
     IBOutlet KontrafactCheckingController* kontrafactController;
     
     ZXingWidgetController *zctrl;
+    UIBlocker *blocker;
 }
 
 -(IBAction)onInfo;

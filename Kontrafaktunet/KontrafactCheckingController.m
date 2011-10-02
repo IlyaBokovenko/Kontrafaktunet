@@ -9,6 +9,7 @@
 #import "Reachability+Utils.h"
 #import "UIAlertView+Utils.h"
 #import "KontrafaktunetAppDelegate.h"
+#import "Settings.h"
 
 typedef enum{
     csInitial,
@@ -115,7 +116,7 @@ typedef enum{
 
 
 -(id)checkCodeViaServer:(NSString*)code{
-    RESTService *service = [[[RESTService alloc] initWithBaseUrl:@"http://code.slognosti.ru/api.ashx"] autorelease];
+    RESTService *service = [[[RESTService alloc] initWithBaseUrl:[NSString stringWithFormat:@"http://%@/api.ashx", [Settings host]]] autorelease];
     WebParams *params = [WebParams params];
     [params addParam:@"check" forKey:@"command"];
     [params addParam:code forKey:@"code"];
@@ -204,9 +205,11 @@ typedef enum{
     MFMessageComposeViewController *msgController = [[MFMessageComposeViewController new] autorelease];
     msgController.messageComposeDelegate = self;
     msgController.body = code;
-    msgController.recipients = [NSArray arrayWithObject:@"+79117848886"];
+    msgController.recipients = [NSArray arrayWithObject:[Settings phone]];
     msgController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
 
+    [rootBlocker blockUI];
+    [rootBlocker showIndicator];
     [self.rootController presentModalViewController:msgController animated:YES];
 }
 
@@ -215,12 +218,14 @@ typedef enum{
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    rootBlocker = [[UIBlocker blockerForView:self.rootController.view] retain];
     [self updateUI:csInitial];
 }
 
 
 - (void)dealloc
 {
+    [rootBlocker release];
     [f1 release];
     [f2 release];
     [f3 release];
@@ -243,9 +248,15 @@ typedef enum{
 
 -(void)checkCode:(NSString*)code{
     self.code = code;
-    [Reachability setHostName:@"code.slognosti.ru"];
-    if([Reachability isNetworkReachable]){
-      [self asyncCheckCodeViaServer:code];  
+    [Reachability setHostName:[Settings host]];
+    
+    [rootBlocker blockUI];
+    [rootBlocker showIndicator];
+    BOOL isReachable = [Reachability isNetworkReachable];
+    [rootBlocker unblockUI];
+    
+    if(/*isReachable*/NO){
+        [self asyncCheckCodeViaServer:code];  
     }else{
         UIAlertView* alert = [[[UIAlertView alloc] initWithTitle:@"Сервер не доступен"
                                                          message:@"Проверить код с помощью бесплатного смс?"
@@ -297,6 +308,7 @@ typedef enum{
 
 - (void)messageComposeViewController:(MFMessageComposeViewController *)controller 
                  didFinishWithResult:(MessageComposeResult)result{
+    [rootBlocker unblockUI];
     [self.rootController dismissModalViewControllerAnimated:YES];
     if(result == MessageComposeResultSent){
         [UIAlertView showAlertViewWithTitle:@"Успех" message:@"Через некоторое время сервер вышлет Вам результаты проверки"];
