@@ -8,5 +8,3 @@ build/*
 # osx noise
 .DS_Store
 
-*.xcodeproj
-!*.xcodeproj/project.pbxproj

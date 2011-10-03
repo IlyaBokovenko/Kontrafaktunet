@@ -67,16 +67,24 @@
 		E69FC48C14327E14001E8185 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC48A14327E14001E8185 /* NSDictionary_JSONExtensions.m */; };
 		E69FC4C714339E9C001E8185 /* InfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC4C514339E8F001E8185 /* InfoController.m */; };
 		E69FC4C814339E9C001E8185 /* InfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69FC4C614339E90001E8185 /* InfoController.xib */; };
-		E6BADD9C1438B72C002BEF0D /* libZXingWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6BADD9B1438B72C002BEF0D /* libZXingWidget.a */; };
+		E6B7A432143A4AAC00B780FF /* libZXingWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B7A431143A4AAC00B780FF /* libZXingWidget.a */; };
 		E6BADD9E1438CEDE002BEF0D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6BADD9D1438CEDE002BEF0D /* MessageUI.framework */; };
 		E6BADDA31438D053002BEF0D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BADDA01438D053002BEF0D /* Reachability.m */; };
 		E6BADDA41438D053002BEF0D /* Reachability+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BADDA21438D053002BEF0D /* Reachability+Utils.m */; };
 		E6BADDA91438D2A8002BEF0D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6BADDA81438D2A8002BEF0D /* SystemConfiguration.framework */; };
 		E6BADDCC143907A0002BEF0D /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BADDCB143907A0002BEF0D /* Settings.m */; };
 		E6BADDD814390BC8002BEF0D /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6BADDD714390BC8002BEF0D /* Settings.plist */; };
+		E6C37001143A3F2A0055D93A /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6C37000143A3F2A0055D93A /* Entitlements.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E6B7A42D143A488500B780FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6BADD8D1438B6DD002BEF0D /* ZXingWidget.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = ZXingWidget;
+		};
 		E6BADD951438B6DE002BEF0D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E6BADD8D1438B6DD002BEF0D /* ZXingWidget.xcodeproj */;
@@ -90,13 +98,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 1D60398D13DF7CAD006F4B51;
 			remoteInfo = ZXingTests;
-		};
-		E6BADD991438B6E5002BEF0D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6BADD8D1438B6DD002BEF0D /* ZXingWidget.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D;
-			remoteInfo = ZXingWidget;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -202,8 +203,8 @@
 		E69FC4C414339E8F001E8185 /* InfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoController.h; sourceTree = "<group>"; };
 		E69FC4C514339E8F001E8185 /* InfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoController.m; sourceTree = "<group>"; };
 		E69FC4C614339E90001E8185 /* InfoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoController.xib; sourceTree = "<group>"; };
+		E6B7A431143A4AAC00B780FF /* libZXingWidget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libZXingWidget.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6BADD8D1438B6DD002BEF0D /* ZXingWidget.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZXingWidget.xcodeproj; path = zxing/iphone/ZXingWidget/ZXingWidget.xcodeproj; sourceTree = "<group>"; };
-		E6BADD9B1438B72C002BEF0D /* libZXingWidget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libZXingWidget.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6BADD9D1438CEDE002BEF0D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		E6BADD9F1438D053002BEF0D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = "ecma-utils/Classes/Reachability.h"; sourceTree = "<group>"; };
 		E6BADDA01438D053002BEF0D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = "ecma-utils/Classes/Reachability.m"; sourceTree = "<group>"; };
@@ -213,6 +214,7 @@
 		E6BADDCA143907A0002BEF0D /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		E6BADDCB143907A0002BEF0D /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
 		E6BADDD714390BC8002BEF0D /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
+		E6C37000143A3F2A0055D93A /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,9 +222,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6B7A432143A4AAC00B780FF /* libZXingWidget.a in Frameworks */,
 				E6BADDA91438D2A8002BEF0D /* SystemConfiguration.framework in Frameworks */,
 				E6BADD9E1438CEDE002BEF0D /* MessageUI.framework in Frameworks */,
-				E6BADD9C1438B72C002BEF0D /* libZXingWidget.a in Frameworks */,
 				E6742758143643B200714C35 /* AddressBook.framework in Frameworks */,
 				E6742756143643A900714C35 /* libiconv.dylib in Frameworks */,
 				E67427541436439800714C35 /* CoreMedia.framework in Frameworks */,
@@ -241,8 +243,8 @@
 		E69FC3C614325CF8001E8185 = {
 			isa = PBXGroup;
 			children = (
+				E6B7A431143A4AAC00B780FF /* libZXingWidget.a */,
 				E6BADDA81438D2A8002BEF0D /* SystemConfiguration.framework */,
-				E6BADD9B1438B72C002BEF0D /* libZXingWidget.a */,
 				E6BADD8D1438B6DD002BEF0D /* ZXingWidget.xcodeproj */,
 				E69FC3DB14325CF8001E8185 /* Kontrafaktunet */,
 				E69FC3F514325D11001E8185 /* Resources */,
@@ -315,6 +317,7 @@
 		E69FC3F514325D11001E8185 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E6C37000143A3F2A0055D93A /* Entitlements.plist */,
 				E6BADDD714390BC8002BEF0D /* Settings.plist */,
 				E62C9A631438868C001C2264 /* camera.png */,
 				E6868AF71434E32400AE008D /* back-button.png */,
@@ -461,7 +464,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				E6BADD9A1438B6E5002BEF0D /* PBXTargetDependency */,
+				E6B7A42E143A488500B780FF /* PBXTargetDependency */,
 			);
 			name = Kontrafaktunet;
 			productName = Kontrafaktunet;
@@ -536,6 +539,7 @@
 				E6868B061434E32400AE008D /* rootscreen-bg.png in Resources */,
 				E62C9A641438868C001C2264 /* camera.png in Resources */,
 				E6BADDD814390BC8002BEF0D /* Settings.plist in Resources */,
+				E6C37001143A3F2A0055D93A /* Entitlements.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,10 +593,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E6BADD9A1438B6E5002BEF0D /* PBXTargetDependency */ = {
+		E6B7A42E143A488500B780FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ZXingWidget;
-			targetProxy = E6BADD991438B6E5002BEF0D /* PBXContainerItemProxy */;
+			targetProxy = E6B7A42D143A488500B780FF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -673,6 +677,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -694,11 +699,54 @@
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
+		};
+		E6C36FFE143A3EF30055D93A /* adhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = adhoc;
+		};
+		E6C36FFF143A3EF30055D93A /* adhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kontrafaktunet/Kontrafaktunet-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"zxing/iphone/ZXingWidget/Classes/**",
+					zxing/cpp/core/src/,
+				);
+				INFOPLIST_FILE = "Kontrafaktunet/Kontrafaktunet-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = adhoc;
 		};
 /* End XCBuildConfiguration section */
 
@@ -708,6 +756,7 @@
 			buildConfigurations = (
 				E69FC3F014325CF8001E8185 /* Debug */,
 				E69FC3F114325CF8001E8185 /* Release */,
+				E6C36FFE143A3EF30055D93A /* adhoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -717,6 +766,7 @@
 			buildConfigurations = (
 				E69FC3F314325CF8001E8185 /* Debug */,
 				E69FC3F414325CF8001E8185 /* Release */,
+				E6C36FFF143A3EF30055D93A /* adhoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
