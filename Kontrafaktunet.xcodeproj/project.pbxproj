@@ -67,7 +67,7 @@
 		E69FC48C14327E14001E8185 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC48A14327E14001E8185 /* NSDictionary_JSONExtensions.m */; };
 		E69FC4C714339E9C001E8185 /* InfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69FC4C514339E8F001E8185 /* InfoController.m */; };
 		E69FC4C814339E9C001E8185 /* InfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69FC4C614339E90001E8185 /* InfoController.xib */; };
-		E6B7A432143A4AAC00B780FF /* libZXingWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B7A431143A4AAC00B780FF /* libZXingWidget.a */; };
+		E6B5F900143A60C4009AED60 /* libZXingWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B5F8FF143A60C4009AED60 /* libZXingWidget.a */; };
 		E6BADD9E1438CEDE002BEF0D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6BADD9D1438CEDE002BEF0D /* MessageUI.framework */; };
 		E6BADDA31438D053002BEF0D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BADDA01438D053002BEF0D /* Reachability.m */; };
 		E6BADDA41438D053002BEF0D /* Reachability+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BADDA21438D053002BEF0D /* Reachability+Utils.m */; };
@@ -78,26 +78,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E6B7A42D143A488500B780FF /* PBXContainerItemProxy */ = {
+		E6B5F8F6143A5EB3009AED60 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E6BADD8D1438B6DD002BEF0D /* ZXingWidget.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D;
-			remoteInfo = ZXingWidget;
-		};
-		E6BADD951438B6DE002BEF0D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6BADD8D1438B6DD002BEF0D /* ZXingWidget.xcodeproj */;
+			containerPortal = E6B5F8EE143A5EB2009AED60 /* ZXingWidget.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D2AAC07E0554694100DB518D;
 			remoteInfo = ZXingWidget;
 		};
-		E6BADD971438B6DE002BEF0D /* PBXContainerItemProxy */ = {
+		E6B5F8F8143A5EB3009AED60 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E6BADD8D1438B6DD002BEF0D /* ZXingWidget.xcodeproj */;
+			containerPortal = E6B5F8EE143A5EB2009AED60 /* ZXingWidget.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 1D60398D13DF7CAD006F4B51;
 			remoteInfo = ZXingTests;
+		};
+		E6B5F8FB143A5F17009AED60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6B5F8EE143A5EB2009AED60 /* ZXingWidget.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = ZXingWidget;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -203,8 +203,8 @@
 		E69FC4C414339E8F001E8185 /* InfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoController.h; sourceTree = "<group>"; };
 		E69FC4C514339E8F001E8185 /* InfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoController.m; sourceTree = "<group>"; };
 		E69FC4C614339E90001E8185 /* InfoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoController.xib; sourceTree = "<group>"; };
-		E6B7A431143A4AAC00B780FF /* libZXingWidget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libZXingWidget.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6BADD8D1438B6DD002BEF0D /* ZXingWidget.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZXingWidget.xcodeproj; path = zxing/iphone/ZXingWidget/ZXingWidget.xcodeproj; sourceTree = "<group>"; };
+		E6B5F8EE143A5EB2009AED60 /* ZXingWidget.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZXingWidget.xcodeproj; path = zxing/iphone/ZXingWidget/ZXingWidget.xcodeproj; sourceTree = "<group>"; };
+		E6B5F8FF143A60C4009AED60 /* libZXingWidget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libZXingWidget.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6BADD9D1438CEDE002BEF0D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		E6BADD9F1438D053002BEF0D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = "ecma-utils/Classes/Reachability.h"; sourceTree = "<group>"; };
 		E6BADDA01438D053002BEF0D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = "ecma-utils/Classes/Reachability.m"; sourceTree = "<group>"; };
@@ -222,7 +222,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6B7A432143A4AAC00B780FF /* libZXingWidget.a in Frameworks */,
+				E6B5F900143A60C4009AED60 /* libZXingWidget.a in Frameworks */,
 				E6BADDA91438D2A8002BEF0D /* SystemConfiguration.framework in Frameworks */,
 				E6BADD9E1438CEDE002BEF0D /* MessageUI.framework in Frameworks */,
 				E6742758143643B200714C35 /* AddressBook.framework in Frameworks */,
@@ -243,9 +243,9 @@
 		E69FC3C614325CF8001E8185 = {
 			isa = PBXGroup;
 			children = (
-				E6B7A431143A4AAC00B780FF /* libZXingWidget.a */,
+				E6B5F8FF143A60C4009AED60 /* libZXingWidget.a */,
+				E6B5F8EE143A5EB2009AED60 /* ZXingWidget.xcodeproj */,
 				E6BADDA81438D2A8002BEF0D /* SystemConfiguration.framework */,
-				E6BADD8D1438B6DD002BEF0D /* ZXingWidget.xcodeproj */,
 				E69FC3DB14325CF8001E8185 /* Kontrafaktunet */,
 				E69FC3F514325D11001E8185 /* Resources */,
 				E69FC40614326B28001E8185 /* Other Sources */,
@@ -441,11 +441,11 @@
 			name = json;
 			sourceTree = "<group>";
 		};
-		E6BADD8E1438B6DD002BEF0D /* Products */ = {
+		E6B5F8EF143A5EB2009AED60 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E6BADD961438B6DE002BEF0D /* libZXingWidget.a */,
-				E6BADD981438B6DE002BEF0D /* ZXingTests.octest */,
+				E6B5F8F7143A5EB3009AED60 /* libZXingWidget.a */,
+				E6B5F8F9143A5EB3009AED60 /* ZXingTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -464,7 +464,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				E6B7A42E143A488500B780FF /* PBXTargetDependency */,
+				E6B5F8FC143A5F17009AED60 /* PBXTargetDependency */,
 			);
 			name = Kontrafaktunet;
 			productName = Kontrafaktunet;
@@ -488,8 +488,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = E6BADD8E1438B6DD002BEF0D /* Products */;
-					ProjectRef = E6BADD8D1438B6DD002BEF0D /* ZXingWidget.xcodeproj */;
+					ProductGroup = E6B5F8EF143A5EB2009AED60 /* Products */;
+					ProjectRef = E6B5F8EE143A5EB2009AED60 /* ZXingWidget.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -500,18 +500,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		E6BADD961438B6DE002BEF0D /* libZXingWidget.a */ = {
+		E6B5F8F7143A5EB3009AED60 /* libZXingWidget.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libZXingWidget.a;
-			remoteRef = E6BADD951438B6DE002BEF0D /* PBXContainerItemProxy */;
+			remoteRef = E6B5F8F6143A5EB3009AED60 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E6BADD981438B6DE002BEF0D /* ZXingTests.octest */ = {
+		E6B5F8F9143A5EB3009AED60 /* ZXingTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ZXingTests.octest;
-			remoteRef = E6BADD971438B6DE002BEF0D /* PBXContainerItemProxy */;
+			remoteRef = E6B5F8F8143A5EB3009AED60 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -593,10 +593,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E6B7A42E143A488500B780FF /* PBXTargetDependency */ = {
+		E6B5F8FC143A5F17009AED60 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ZXingWidget;
-			targetProxy = E6B7A42D143A488500B780FF /* PBXContainerItemProxy */;
+			targetProxy = E6B5F8FB143A5F17009AED60 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
