@@ -96,6 +96,8 @@ typedef enum{
             check.enabled = YES;
             check.hidden = NO;
             checkOther.hidden = YES;
+            scanButton.hidden = NO;
+            thinLine.hidden = NO;
             bgImage.image = [UIImage imageNamed:@"check-bg.png"];
             [indicator stopAnimating];
             break;
@@ -104,6 +106,8 @@ typedef enum{
             check.enabled = NO;
             check.hidden = NO;
             checkOther.hidden = YES;
+            scanButton.hidden = NO;
+            thinLine.hidden = NO;
             bgImage.image = [UIImage imageNamed:@"check-bg.png"];            
             [indicator startAnimating];
             break;
@@ -112,6 +116,8 @@ typedef enum{
             check.enabled = YES;
             check.hidden = YES;
             checkOther.hidden = NO;
+            scanButton.hidden = YES;
+            thinLine.hidden = YES;
             bgImage.image = [UIImage imageNamed:@"checked-bg.png"];
             [indicator stopAnimating];            
             break;
@@ -120,6 +126,8 @@ typedef enum{
             check.enabled = YES;
             check.hidden = YES;
             checkOther.hidden = NO;
+            scanButton.hidden = YES;
+            thinLine.hidden = YES;
             bgImage.image = [UIImage imageNamed:@"fake-bg.png"];
             [indicator stopAnimating];            
             break;            
@@ -249,6 +257,9 @@ typedef enum{
     [f4 release];
     
     [check release];
+    [scanButton release];
+    
+    [thinLine release];
     
     [indicator release];
     

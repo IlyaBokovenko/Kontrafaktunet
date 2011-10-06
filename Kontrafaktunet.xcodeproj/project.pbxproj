@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E615F3D9143E531B00033724 /* thin-line.png in Resources */ = {isa = PBXBuildFile; fileRef = E615F3D8143E531B00033724 /* thin-line.png */; };
 		E62C30AD1433B360005985B8 /* PagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E62C30AC1433B360005985B8 /* PagerController.m */; };
 		E62C30D31433C01B005985B8 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E62C30D11433C01B005985B8 /* WebViewController.m */; };
 		E62C30D41433C01B005985B8 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E62C30D21433C01B005985B8 /* WebViewController.xib */; };
@@ -102,6 +103,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E615F3D8143E531B00033724 /* thin-line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thin-line.png"; sourceTree = "<group>"; };
 		E62C30AB1433B360005985B8 /* PagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PagerController.h; path = "ecma-utils/Classes/PagerController.h"; sourceTree = "<group>"; };
 		E62C30AC1433B360005985B8 /* PagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PagerController.m; path = "ecma-utils/Classes/PagerController.m"; sourceTree = "<group>"; };
 		E62C30D01433C01B005985B8 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 		E69FC3F514325D11001E8185 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E615F3D8143E531B00033724 /* thin-line.png */,
 				E6C37000143A3F2A0055D93A /* Entitlements.plist */,
 				E6BADDD714390BC8002BEF0D /* Settings.plist */,
 				E62C9A631438868C001C2264 /* camera.png */,
@@ -540,6 +543,7 @@
 				E62C9A641438868C001C2264 /* camera.png in Resources */,
 				E6BADDD814390BC8002BEF0D /* Settings.plist in Resources */,
 				E6C37001143A3F2A0055D93A /* Entitlements.plist in Resources */,
+				E615F3D9143E531B00033724 /* thin-line.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

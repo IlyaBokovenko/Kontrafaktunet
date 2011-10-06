@@ -11,6 +11,8 @@
     
     IBOutlet UIButton *check;
     IBOutlet UIButton *checkOther;
+    IBOutlet UIButton *scanButton;
+    IBOutlet UIImageView *thinLine;
     
     IBOutlet UIActivityIndicatorView *indicator;    
     IBOutlet UIImageView *bgImage;
